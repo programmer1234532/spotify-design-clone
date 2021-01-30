@@ -1,70 +1,72 @@
 import React from 'react';
-import { RightSideDiv } from '../styled-components/RightSideStyledComponents';
+import { RightSideDiv,  } from '../styled-components/RightSideStyledComponents';
 
 const RightSide = () => {
     return (
         <RightSideDiv>
             <div>
-                <h2></h2>
-            </div>
-            <div>
                 <div>
-                    <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div>
-                        <i></i>
-                    </div>
+                    <h2></h2>
                 </div>
                 <div>
                     <div>
-                        <img></img>
+                        <div>
+                            <img></img>
+                        </div>
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <i></i>
+                        </div>
                     </div>
                     <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <div>
+                            <img></img>
+                        </div>
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <i></i>
+                        </div>
                     </div>
                     <div>
-                        <i></i>
+                        <div>
+                            <img></img>
+                        </div>
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img></img>
+                        </div>
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <i></i>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div>
-                        <i></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div>
-                        <i></i>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </RightSideDiv>
     )
 }

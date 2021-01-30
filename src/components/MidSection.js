@@ -23,11 +23,7 @@ const MidSection = () => {
             <div>
                 <div>
                     <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <p></p>
-                        <p></p>
+                        <h2></h2>
                     </div>
                     <div>
                         <i></i>
@@ -38,11 +34,9 @@ const MidSection = () => {
                         <img></img>
                     </div>
                     <div>
+                        <h2></h2>
                         <p></p>
                         <p></p>
-                    </div>
-                    <div>
-                        <i></i>
                     </div>
                 </div>
                 <div>
@@ -50,11 +44,19 @@ const MidSection = () => {
                         <img></img>
                     </div>
                     <div>
+                        <h2></h2>
                         <p></p>
                         <p></p>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <i></i>
+                        <img></img>
+                    </div>
+                    <div>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </div>
             </div>

@@ -1,18 +1,24 @@
 import React from 'react';
-import { LeftSideDiv } from '../styled-components/LeftSideStyledComponents';
+import
+    {
+        LeftSideDiv,
+        FirstDiv,
+        MoreOptions,
+        SecondDiv,
+    } from '../styled-components/LeftSideStyledComponents';
 import IconAndParagraph from "./IconAndParagraph";
 
 const LeftSide = () => {
     return (
         <LeftSideDiv>
-            <div>
-                <i></i>
-            </div>
-            <div>
-                <IconAndParagraph/>
-                <IconAndParagraph/>
-                <IconAndParagraph/>
-            </div>
+            <FirstDiv>
+                <MoreOptions></MoreOptions>
+            </FirstDiv>
+            <SecondDiv>
+                <IconAndParagraph icon="fas fa-home" words="Home"/>
+                <IconAndParagraph icon="fas fa-archive" words="Browse"/>
+                <IconAndParagraph icon="fas fa-broadcast-tower" words="Radio"/>
+            </SecondDiv>
             <div>
                 <div>
                     <h2></h2>
