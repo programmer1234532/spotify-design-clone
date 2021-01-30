@@ -1,10 +1,11 @@
 import React from 'react';
+import { BottomSideDiv } from "../styled-components/BottomSideStyledComponents";
 
 const BottomSide = () => {
     return (
-        <div>
+        <BottomSideDiv>
             Bottom Side
-        </div>
+        </BottomSideDiv>
     )
 }
 
