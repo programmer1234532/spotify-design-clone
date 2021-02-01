@@ -1,11 +1,12 @@
 import React from 'react';
+import { Icon, IconDiv, Paragraph } from '../styled-components/LeftSideStyledComponents';
 
 const IconAndParagraph = ({icon, words}) => {
     return (
-        <div>
-            <i className={icon}></i>
-            <p>{words}</p>
-        </div>
+        <IconDiv>
+            <Icon className={icon}></Icon>
+            <Paragraph>{words}</Paragraph>
+        </IconDiv>
     )
 }
 

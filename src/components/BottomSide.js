@@ -4,7 +4,18 @@ import { BottomSideDiv } from "../styled-components/BottomSideStyledComponents";
 const BottomSide = () => {
     return (
         <BottomSideDiv>
-            Bottom Side
+            <div>
+                <div>
+                    <img></img>
+                </div>
+                <div>
+                    <p></p>
+                    
+                </div>
+                <div></div>
+            </div>
+            <div></div>
+            <div></div>
         </BottomSideDiv>
     )
 }
