@@ -8,10 +8,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     overflow:hidden;
   }
-
-  html::-webkit-scrollbar-track{
-    background:black;
-  }
 `;
  
 export default GlobalStyle;

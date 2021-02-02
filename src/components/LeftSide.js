@@ -13,11 +13,12 @@ import
         AddPlaylistDiv,
         NewPlaylistIcon,
         NewPlaylistParagraph,
-        NewPlayListDivs
     } from '../styled-components/LeftSideStyledComponents';
 import IconAndParagraph from "./IconAndParagraph";
 
 const LeftSide = () => {
+
+    
     return (
         <LeftSideDiv>
             <FirstDiv>

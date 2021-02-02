@@ -61,6 +61,17 @@ export const PlaylistsDiv = styled.div`
     padding-left:20px;
     margin-top:20px;
     overflow-y:scroll;
+    &::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    background: black;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #5c5b5b;
+        &:hover{
+            background:#e8e6e6;
+        }
+    }
 `;
 
 export const PlaylistDiv = styled.div`
