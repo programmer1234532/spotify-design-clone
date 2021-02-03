@@ -4,6 +4,18 @@ export const MidSectionDiv = styled.div`
     background-color: green;
     width:100%;
     font-family:"Roboto",sans-serif;
+    overflow-y:scroll;
+    &::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    background: black;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #5c5b5b;
+        &:hover{
+            background:#e8e6e6;
+        }
+    }
 `;
 
 export const MidFirstDiv = styled.div`
@@ -16,7 +28,7 @@ export const MidFirstDiv = styled.div`
 
 export const SearchDiv = styled.div`
     display:flex;
-    width:30%;
+    width:40%;
 `;
 
 export const ArrowIcon = styled.i`
@@ -27,11 +39,15 @@ export const ArrowIcon = styled.i`
 `;
 
 export const SearchBarICon = styled.i`
-    position: absolute;
-    top:24px;
-    padding-left:11px;
+    padding-top:5px;
+    padding-left:5px;
+    padding-right:7px;
     font-size:14px;
     color:#807f7e;
+    background:white;
+    height:50%;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
 `;
 
 export const SearchBarDiv = styled.div`
@@ -41,11 +57,10 @@ export const SearchBarDiv = styled.div`
 `;
 
 export const SearchBarInput = styled.input`
-    width:80%;
-    border-radius:50px;
+    width:100%;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
     height:50%;
-    padding-left:24px;
-    margin-left:5px;
     border:none;
     &:focus {
     outline: none;
@@ -73,6 +88,10 @@ export const AccountName = styled.p`
     padding-top:4px;
     padding-right:20px;
     font-size:15px;
+    cursor:context-menu;
+    &:hover{
+        text-decoration:underline;
+    }
 `;
 
 export const DownArrow = styled.i`
@@ -93,4 +112,10 @@ export const Title = styled.h1`
     padding-left:25px;
     font-size:48px;
     height:50%;
+`;
+
+export const List = styled.div`
+    background-color:green;
+    display:flex;
+    flex-direction:column;
 `;
