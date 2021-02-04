@@ -1,5 +1,5 @@
 import React from "react";
-import { AppMainDiv, TopDiv } from "./AppStyledComponents";
+import { AppMainDiv, TopDiv,BottomDiv } from "./AppStyledComponents";
 import BottomSide from "./components/BottomSide";
 import LeftSide from "./components/LeftSide";
 import MidSection from "./components/MidSection";
@@ -17,9 +17,9 @@ function App() {
           <MidSection></MidSection>
           <RightSide></RightSide>
         </TopDiv>
-        <div>
+        <BottomDiv>
           <BottomSide></BottomSide>
-        </div>
+        </BottomDiv>
       </AppMainDiv>
     </>
   );

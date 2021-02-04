@@ -4,9 +4,9 @@ import { FaEllipsisH } from 'react-icons/fa';
 
 export const LeftSideDiv = styled.div`
     background-color: black;
-    width:22%;
+    width:300px;
     height:100%;
-    padding-top:10px;
+    padding-top:20px;
     display:flex;
     flex-direction:column;
     font-family: 'Roboto', sans-serif;
@@ -14,13 +14,13 @@ export const LeftSideDiv = styled.div`
 `;
 
 export const FirstDiv = styled.div`
-    height:12%;
+    height:9%;
     padding-left:20px;
 `; 
 
 export const MoreOptions = styled( FaEllipsisH )`
     color:white;
-    font-size:20px;
+    font-size:22px;
 `;
 
 export const SecondDiv = styled.div`

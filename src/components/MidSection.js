@@ -22,7 +22,8 @@ import
         PlaylistsArrows,
         ImageAndTextDiv,
         ImageDiv,
-        TextDiv
+        TextDiv,
+        PlaylistName
     } from '../styled-components/MidSectionStyledComponents';
 
 const MidSection = () => {
@@ -63,7 +64,7 @@ const MidSection = () => {
                                 <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
+                                <PlaylistName>On Repeat</PlaylistName>
                                 <p>The songs you can't get enough of right now</p>
                                 <p>1 FOLLOWER</p>
                             </TextDiv>
