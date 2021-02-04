@@ -114,8 +114,61 @@ export const Title = styled.h1`
     height:50%;
 `;
 
-export const List = styled.div`
-    background-color:green;
+export const Container = styled.div`
     display:flex;
     flex-direction:column;
+    background:black;
+`;
+
+export const Row = styled.div`
+    display:flex;
+    flex-direction:column;
+    margin: 15px 25px;
+`;
+
+export const TopPart = styled.div`
+    display:flex;
+    height:14%;
+    margin-bottom:10px;
+    border-bottom:0.5px solid rgba(232,230,230,0.25);
+`;
+
+export const BottomPart = styled.div`
+    background-color:yellow;
+    display:flex;
+`;
+
+export const PlaylistsTitle = styled.div`
+    width:30%;
+    padding-top:7px;
+    color:white;
+    font-size:.7rem;
+`;
+
+export const PlaylistsArrows = styled.div`
+    display:flex;
+    width:70%;
+    justify-content:flex-end;
+    padding-right:10px;
+`;
+
+export const ImageAndTextDiv = styled.div`
+    display:flex;
+    flex-direction:column;
+    width:25%;
+    padding-right:15px;
+`;
+
+export const ImageDiv = styled.div`
+    height:300%;
+`;
+
+export const TextDiv = styled.div`
+    display:flex;
+    flex-direction:column;
+    height:70%;
+`;
+
+export const PlaylistName = styled.h2`
+    margin-bottom:20px;
 `;

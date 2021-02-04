@@ -14,7 +14,15 @@ import
         DownArrow,
         MidSecondDiv,
         Title,
-        List
+        Container,
+        Row,
+        TopPart,
+        BottomPart,
+        PlaylistsTitle,
+        PlaylistsArrows,
+        ImageAndTextDiv,
+        ImageDiv,
+        TextDiv
     } from '../styled-components/MidSectionStyledComponents';
 
 const MidSection = () => {
@@ -38,46 +46,114 @@ const MidSection = () => {
             <MidSecondDiv>
                 <Title>Home</Title>
             </MidSecondDiv>
-            <List>
-                <div>
-                    <div>
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <i></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img></img>
-                    </div>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
-            </List>
+            <Container>
+                <Row>
+                    <TopPart>
+                        <PlaylistsTitle>
+                            <h2>Shortcuts</h2>
+                        </PlaylistsTitle>
+                        <PlaylistsArrows>
+                            <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                        </PlaylistsArrows>
+                    </TopPart>
+                    <BottomPart>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                    </BottomPart>
+                </Row>
+                <Row>
+                    <TopPart>
+                        <PlaylistsTitle>
+                            <h2>Shortcuts</h2>
+                        </PlaylistsTitle>
+                        <PlaylistsArrows>
+                            <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                        </PlaylistsArrows>
+                    </TopPart>
+                    <BottomPart>
+                    <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            </ImageDiv>
+                            <TextDiv>
+                                <h2>On Repeat</h2>
+                                <p>The songs you can't get enough of right now</p>
+                                <p>1 FOLLOWER</p>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                    </BottomPart>
+                </Row>
+            </Container>
         </MidSectionDiv>
     )
 }
