@@ -23,7 +23,10 @@ import
         ImageAndTextDiv,
         ImageDiv,
         TextDiv,
-        PlaylistName
+        PlaylistName,
+        Image,
+        PlaylistDescription,
+        PlaylistFollowers
     } from '../styled-components/MidSectionStyledComponents';
 
 const MidSection = () => {
@@ -61,42 +64,42 @@ const MidSection = () => {
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
+                        <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                     </BottomPart>
@@ -114,42 +117,95 @@ const MidSection = () => {
                     <BottomPart>
                     <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv lastImage>
+                            <ImageDiv>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                    </BottomPart>
+                </Row>
+                <Row>
+                    <TopPart>
+                        <PlaylistsTitle>
+                            <h2>Shortcuts</h2>
+                        </PlaylistsTitle>
+                        <PlaylistsArrows>
+                            <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                        </PlaylistsArrows>
+                    </TopPart>
+                    <BottomPart>
+                    <ImageAndTextDiv>
+                            <ImageDiv>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <img src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></img>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
-                                <h2>On Repeat</h2>
-                                <p>The songs you can't get enough of right now</p>
-                                <p>1 FOLLOWER</p>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv lastImage>
+                            <ImageDiv>
+                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                     </BottomPart>

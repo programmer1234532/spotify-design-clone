@@ -5,6 +5,7 @@ export const MidSectionDiv = styled.div`
     width:100%;
     font-family:"Roboto",sans-serif;
     overflow-y:scroll;
+    overflow-x:hidden;
     &::-webkit-scrollbar {
     width: 15px;
     height: 15px;
@@ -124,18 +125,20 @@ export const Row = styled.div`
     display:flex;
     flex-direction:column;
     margin: 15px 25px;
+    height:100%;
 `;
 
 export const TopPart = styled.div`
     display:flex;
-    height:14%;
-    margin-bottom:10px;
-    border-bottom:0.5px solid rgba(232,230,230,0.25);
+    height:9%;
+    padding-bottom:10px;
+    margin-bottom:15px;
+    border-bottom:1px solid rgba(232,230,230,0.25);
 `;
 
 export const BottomPart = styled.div`
-    background-color:yellow;
     display:flex;
+    width:100%;
 `;
 
 export const PlaylistsTitle = styled.div`
@@ -156,19 +159,46 @@ export const ImageAndTextDiv = styled.div`
     display:flex;
     flex-direction:column;
     width:25%;
-    padding-right:15px;
+    margin-right:${props => props.lastImage ? "0px" : "10px"};
 `;
 
 export const ImageDiv = styled.div`
-    height:300%;
+   margin-bottom:10px;
+   &:hover{
+        background:black;
+    }
+    cursor:pointer;
 `;
 
 export const TextDiv = styled.div`
     display:flex;
     flex-direction:column;
     height:70%;
+    color:white;
 `;
 
 export const PlaylistName = styled.h2`
-    margin-bottom:20px;
+    margin-bottom:5px;
+    font-size:16px;
 `;
+
+export const PlaylistDescription = styled.p`
+    margin-bottom:10px;
+    font-weight:300;
+    font-size:14px;
+`;
+
+export const PlaylistFollowers = styled.p`
+    margin-bottom:5px;
+    font-weight:300;
+    font-size:14px;
+`;
+
+export const Image = styled.img`
+    width:100%;
+    height:100%;
+`;
+
+
+
+

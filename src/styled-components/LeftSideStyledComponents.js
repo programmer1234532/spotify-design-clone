@@ -26,7 +26,7 @@ export const MoreOptions = styled( FaEllipsisH )`
 export const SecondDiv = styled.div`
     margin-top:10px;
     background-color:black;
-    height:32%;
+    height:20%;
     color:white;
     display:flex;
     flex-direction:column;
@@ -36,6 +36,7 @@ export const SecondDiv = styled.div`
 export const IconDiv = styled.div`
     display:flex;
     font-weight:300;
+    padding-bottom:15px;
     color:#e8e6e6;
     -webkit-text-stroke: 0px #e8e6e6;
     transition:font 0.05s ease-in;
@@ -77,7 +78,7 @@ export const PlaylistsDiv = styled.div`
 export const PlaylistDiv = styled.div`
     display:flex;
     flex-direction:column;
-    height:50%;
+    height:60%;
 `;
 
 export const PlaylistHeader = styled.p`
@@ -100,7 +101,7 @@ export const PlaylistSongs = styled.p`
 `;
 
 export const NewPlaylistDiv = styled.div`
-    height:16%;
+    height:12%;
     display:flex;
     align-items:center;
     margin-top:4px;
