@@ -22,9 +22,12 @@ export const MidSectionDiv = styled.div`
 export const MidFirstDiv = styled.div`
     height:10%;
     background-color:black;
-    width:100%;
     padding-top:15px;
     display:flex;
+    position:sticky;
+    z-index:999;
+    width: 100%;
+    top:0;
 `;
 
 export const SearchDiv = styled.div`

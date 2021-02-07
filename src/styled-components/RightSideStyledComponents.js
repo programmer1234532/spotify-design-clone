@@ -3,6 +3,6 @@ import styled from "styled-components";
 
 export const RightSideDiv = styled.div`
     background-color: red;
-    width:35%;
+    width:450px;
 `;
 
