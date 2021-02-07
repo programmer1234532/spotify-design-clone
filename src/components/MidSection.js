@@ -26,7 +26,8 @@ import
         PlaylistName,
         Image,
         PlaylistDescription,
-        PlaylistFollowers
+        PlaylistFollowers,
+        SettingsDiv
     } from '../styled-components/MidSectionStyledComponents';
 
 const MidSection = () => {
@@ -65,6 +66,9 @@ const MidSection = () => {
                         <ImageAndTextDiv>
                             <ImageDiv>
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <SettingsDiv>
+                                        Hello
+                                </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -117,7 +121,7 @@ const MidSection = () => {
                     <BottomPart>
                     <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>

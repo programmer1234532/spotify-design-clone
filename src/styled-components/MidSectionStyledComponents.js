@@ -163,11 +163,11 @@ export const ImageAndTextDiv = styled.div`
 `;
 
 export const ImageDiv = styled.div`
-   margin-bottom:10px;
-   &:hover{
-        background:black;
+    margin-bottom:10px;
+    position: relative;
+    &:hover{
+        filter: brightness(30%);
     }
-    cursor:pointer;
 `;
 
 export const TextDiv = styled.div`
@@ -191,12 +191,17 @@ export const PlaylistDescription = styled.p`
 export const PlaylistFollowers = styled.p`
     margin-bottom:5px;
     font-weight:300;
-    font-size:14px;
+    font-size:13px;
 `;
 
 export const Image = styled.img`
     width:100%;
     height:100%;
+`;
+
+export const SettingsDiv = styled.div`
+    position:absolute;
+    
 `;
 
 
