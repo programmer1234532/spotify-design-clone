@@ -35,8 +35,14 @@ export const SearchDiv = styled.div`
 export const ArrowIcon = styled.i`
     padding:0 17px;
     margin-top:7px;
-    color:white;
+    opacity:0.8;
+    color:${props => props.color ? props.color : "#e8e6e6"};
     font-size:20px;
+    &:hover{
+        color:${props => props.hover ? "white" : "#5c5b5b" };
+        opacity:${props => props.hover ? "1" : "0.8" };
+    }
+
 `;
 
 export const SearchBarICon = styled.i`
@@ -240,6 +246,7 @@ export const IconDiv = styled.div`
 
 export const PlayButton = styled.i`
     font-size:55px;
+    transition:icon 1s ease-in;
     &:hover{
         color:white;
         font-size:58px;

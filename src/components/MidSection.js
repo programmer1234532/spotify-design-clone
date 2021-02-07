@@ -39,8 +39,8 @@ const MidSection = () =>
         <MidSectionDiv>
             <MidFirstDiv>
                 <SearchDiv>
-                    <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
-                    <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                    <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                    <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                     <SearchBarDiv>
                         <SearchBarICon className="fas fa-search"></SearchBarICon>
                         <SearchBarInput placeholder="Search"></SearchBarInput> 
@@ -62,14 +62,14 @@ const MidSection = () =>
                             <h2>Shortcuts</h2>
                         </PlaylistsTitle>
                         <PlaylistsArrows>
-                            <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                            <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv>
@@ -92,7 +92,7 @@ const MidSection = () =>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv>
