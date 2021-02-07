@@ -27,10 +27,14 @@ import
         Image,
         PlaylistDescription,
         PlaylistFollowers,
-        SettingsDiv
+        SettingsDiv,
+        IconsDiv,
+        PlayButton,
+        IconDiv
     } from '../styled-components/MidSectionStyledComponents';
 
-const MidSection = () => {
+const MidSection = () =>
+{
     return (
         <MidSectionDiv>
             <MidFirstDiv>
@@ -65,10 +69,20 @@ const MidSection = () => {
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                <SettingsDiv>
-                                        Hello
-                                </SettingsDiv>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -78,7 +92,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -88,7 +115,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -98,7 +138,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -119,9 +172,22 @@ const MidSection = () => {
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
-                    <ImageAndTextDiv>
+                        <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -131,7 +197,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -141,7 +220,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -151,7 +243,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -172,9 +277,22 @@ const MidSection = () => {
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
-                    <ImageAndTextDiv>
+                        <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -184,7 +302,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -194,7 +325,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -204,7 +348,20 @@ const MidSection = () => {
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                            <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv>
+                                                <i className="far fa-heart"></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>

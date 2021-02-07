@@ -165,9 +165,6 @@ export const ImageAndTextDiv = styled.div`
 export const ImageDiv = styled.div`
     margin-bottom:10px;
     position: relative;
-    &:hover{
-        filter: brightness(30%);
-    }
 `;
 
 export const TextDiv = styled.div`
@@ -194,14 +191,59 @@ export const PlaylistFollowers = styled.p`
     font-size:13px;
 `;
 
-export const Image = styled.img`
+export const Image = styled.div`
     width:100%;
-    height:100%;
+    height:220px;
+    background:${props => props.source && `url("${ props.source }")`};
+    background-size: cover;
+    background-position: center center;
 `;
 
 export const SettingsDiv = styled.div`
+    background-color:rgba(0,0,0,0);
     position:absolute;
-    
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    &:hover{
+        
+        background-color:rgba(0,0,0,0.6);
+    }
+`;
+
+export const IconsDiv = styled.div`
+    opacity:0;
+    width:100%;
+    height:100%;
+    color:#e8e6e6;
+    font-size:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    &:hover{
+        opacity:1;
+    }
+`;
+
+export const IconDiv = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 15px;
+`;
+
+export const PlayButton = styled.i`
+    font-size:55px;
+    &:hover{
+        color:white;
+        font-size:58px;
+    }
 `;
 
 
