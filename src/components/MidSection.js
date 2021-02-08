@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useRef} from 'react';
 import
     {
         ArrowIcon,
@@ -35,15 +35,32 @@ import
 
 const MidSection = () =>
 {
+    const [deleteButton, setDeleteButton] = useState( false );
+
+    const scrollNavBar = useRef( null );
+
+    const checkDeleteButton = (e) =>
+    {
+        if ( e.target.value.length > 0 )
+        {
+            setDeleteButton( true );
+        }
+        else
+        {
+            setDeleteButton( false );
+        }
+    }
+
     return (
-        <MidSectionDiv>
+        <MidSectionDiv ref={scrollNavBar}>
             <MidFirstDiv>
                 <SearchDiv>
                     <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
                     <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                     <SearchBarDiv>
                         <SearchBarICon className="fas fa-search"></SearchBarICon>
-                        <SearchBarInput placeholder="Search"></SearchBarInput> 
+                        <SearchBarInput onChange={checkDeleteButton} placeholder="Search"></SearchBarInput>
+                        {deleteButton ? <div>delete</div> : <div>empty</div>}
                     </SearchBarDiv>
                 </SearchDiv>
                 <AccountDiv>
@@ -167,8 +184,8 @@ const MidSection = () =>
                             <h2>Shortcuts</h2>
                         </PlaylistsTitle>
                         <PlaylistsArrows>
-                            <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                            <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
@@ -272,8 +289,8 @@ const MidSection = () =>
                             <h2>Shortcuts</h2>
                         </PlaylistsTitle>
                         <PlaylistsArrows>
-                            <ArrowIcon className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon className="fas fa-chevron-right"></ArrowIcon>
+                            <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
