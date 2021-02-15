@@ -68,13 +68,20 @@ export const SearchBarDiv = styled.div`
 
 export const SearchBarInput = styled.input`
     width:100%;
-    border-top-right-radius:50px;
-    border-bottom-right-radius:50px;
     height:50%;
     border:none;
     &:focus {
     outline: none;
     }
+`;
+
+export const DeleteIcon = styled.i`
+    color:#807f7e;
+    background-color:white;
+    height:50%;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    font-size:14px;
 `;
 
 export const AccountDiv = styled.div`
@@ -85,6 +92,7 @@ export const AccountDiv = styled.div`
     padding-right:25px;
     padding-top:4px; 
     color:white;
+    
 `;
 
 export const AccountImage = styled.img`

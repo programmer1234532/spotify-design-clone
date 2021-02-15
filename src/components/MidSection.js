@@ -30,14 +30,15 @@ import
         SettingsDiv,
         IconsDiv,
         PlayButton,
-        IconDiv
+        IconDiv,
+        DeleteIcon
     } from '../styled-components/MidSectionStyledComponents';
 
 const MidSection = () =>
 {
     const [deleteButton, setDeleteButton] = useState( false );
-
-    const scrollNavBar = useRef( null );
+    const [playButton, setPlayButton] = useState( false );
+    const [heartButton, setHeartButton] = useState( false );
 
     const checkDeleteButton = (e) =>
     {
@@ -52,7 +53,7 @@ const MidSection = () =>
     }
 
     return (
-        <MidSectionDiv ref={scrollNavBar}>
+        <MidSectionDiv onSrcoll={() => console.log("Hello") } >
             <MidFirstDiv>
                 <SearchDiv>
                     <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
@@ -60,7 +61,7 @@ const MidSection = () =>
                     <SearchBarDiv>
                         <SearchBarICon className="fas fa-search"></SearchBarICon>
                         <SearchBarInput onChange={checkDeleteButton} placeholder="Search"></SearchBarInput>
-                        {deleteButton ? <div>delete</div> : <div>empty</div>}
+                        {deleteButton && <DeleteIcon class="fas fa-times"></DeleteIcon> }
                     </SearchBarDiv>
                 </SearchDiv>
                 <AccountDiv>
@@ -89,11 +90,11 @@ const MidSection = () =>
                                 <Image source="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>
