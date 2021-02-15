@@ -31,7 +31,6 @@ import
         IconsDiv,
         PlayButton,
         IconDiv,
-        DeleteIcon
     } from '../styled-components/MidSectionStyledComponents';
 
 const MidSection = () =>
@@ -39,6 +38,7 @@ const MidSection = () =>
     const [deleteButton, setDeleteButton] = useState( false );
     const [playButton, setPlayButton] = useState( false );
     const [heartButton, setHeartButton] = useState( false );
+    const [changeColors, setChangeColors] = useState( false );
 
     const checkDeleteButton = (e) =>
     {
@@ -52,16 +52,28 @@ const MidSection = () =>
         }
     }
 
+    const handleScroll = (e) =>
+    {
+        if ( e.target.scrollTop > 50 )
+        {
+            setChangeColors( true );
+        }
+        else
+        {
+            setChangeColors( false );
+        }
+    }
+
     return (
-        <MidSectionDiv onSrcoll={() => console.log("Hello") } >
+        <MidSectionDiv onScroll={handleScroll} >
             <MidFirstDiv>
                 <SearchDiv>
                     <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
                     <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                     <SearchBarDiv>
                         <SearchBarICon className="fas fa-search"></SearchBarICon>
-                        <SearchBarInput onChange={checkDeleteButton} placeholder="Search"></SearchBarInput>
-                        {deleteButton && <DeleteIcon class="fas fa-times"></DeleteIcon> }
+                        <SearchBarInput onChange={checkDeleteButton} bottom={deleteButton ? "0px" : "50px"} placeholder="Search"></SearchBarInput>
+                        {deleteButton && <SearchBarICon delete className="fas fa-times"></SearchBarICon> }
                     </SearchBarDiv>
                 </SearchDiv>
                 <AccountDiv>
@@ -70,8 +82,8 @@ const MidSection = () =>
                     <DownArrow className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
             </MidFirstDiv>
-            <MidSecondDiv>
-                <Title>Home</Title>
+            <MidSecondDiv height={changeColors && "8%"} border={changeColors && "2px solid rgba(232,230,230,0.25)"}>
+                <Title font={changeColors && "34px"} >Home</Title>
             </MidSecondDiv>
             <Container>
                 <Row>
@@ -112,12 +124,117 @@ const MidSection = () =>
                             <ImageDiv>
                                 <Image source="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                    <IconsDiv>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                    <IconsDiv>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv lastImage>
+                            <ImageDiv>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                    <IconsDiv>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                    </BottomPart>
+                </Row>
+                <Row>
+                    <TopPart>
+                        <PlaylistsTitle>
+                            <h2>Shortcuts</h2>
+                        </PlaylistsTitle>
+                        <PlaylistsArrows>
+                            <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
+                        </PlaylistsArrows>
+                    </TopPart>
+                    <BottomPart>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                    <IconsDiv>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                    <IconsDiv>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>
@@ -136,11 +253,11 @@ const MidSection = () =>
                                 <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>
@@ -159,11 +276,11 @@ const MidSection = () =>
                                 <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>
@@ -195,34 +312,11 @@ const MidSection = () =>
                                 <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <i class="fas fa-ellipsis-h"></i>
-                                            </IconDiv>
-                                        </IconsDiv>
-                                    </SettingsDiv>
-                            </ImageDiv>
-                            <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
-                            </TextDiv>
-                        </ImageAndTextDiv>
-                        <ImageAndTextDiv>
-                            <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                    <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>
@@ -241,11 +335,34 @@ const MidSection = () =>
                                 <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </IconDiv>
+                                        </IconsDiv>
+                                    </SettingsDiv>
+                            </ImageDiv>
+                            <TextDiv>
+                                <PlaylistName>On Repeat</PlaylistName>
+                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
+                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                            </TextDiv>
+                        </ImageAndTextDiv>
+                        <ImageAndTextDiv>
+                            <ImageDiv>
+                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                    <SettingsDiv>
+                                        <IconsDiv>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
+                                            </IconDiv>
+                                            <IconDiv>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>
@@ -264,116 +381,11 @@ const MidSection = () =>
                                 <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
+                                            <IconDiv >
+                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
                                             <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <i class="fas fa-ellipsis-h"></i>
-                                            </IconDiv>
-                                        </IconsDiv>
-                                    </SettingsDiv>
-                            </ImageDiv>
-                            <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
-                            </TextDiv>
-                        </ImageAndTextDiv>
-                    </BottomPart>
-                </Row>
-                <Row>
-                    <TopPart>
-                        <PlaylistsTitle>
-                            <h2>Shortcuts</h2>
-                        </PlaylistsTitle>
-                        <PlaylistsArrows>
-                            <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
-                        </PlaylistsArrows>
-                    </TopPart>
-                    <BottomPart>
-                        <ImageAndTextDiv>
-                            <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                    <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <i class="fas fa-ellipsis-h"></i>
-                                            </IconDiv>
-                                        </IconsDiv>
-                                    </SettingsDiv>
-                            </ImageDiv>
-                            <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
-                            </TextDiv>
-                        </ImageAndTextDiv>
-                        <ImageAndTextDiv>
-                            <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                    <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <i class="fas fa-ellipsis-h"></i>
-                                            </IconDiv>
-                                        </IconsDiv>
-                                    </SettingsDiv>
-                            </ImageDiv>
-                            <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
-                            </TextDiv>
-                        </ImageAndTextDiv>
-                        <ImageAndTextDiv>
-                            <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                    <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <i class="fas fa-ellipsis-h"></i>
-                                            </IconDiv>
-                                        </IconsDiv>
-                                    </SettingsDiv>
-                            </ImageDiv>
-                            <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
-                            </TextDiv>
-                        </ImageAndTextDiv>
-                        <ImageAndTextDiv lastImage>
-                            <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                    <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv>
-                                                <i className="far fa-heart"></i>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <PlayButton className="far fa-play-circle"></PlayButton>
+                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>
                                                 <i class="fas fa-ellipsis-h"></i>

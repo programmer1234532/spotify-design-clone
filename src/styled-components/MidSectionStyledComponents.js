@@ -32,7 +32,7 @@ export const MidFirstDiv = styled.div`
 
 export const SearchDiv = styled.div`
     display:flex;
-    width:40%;
+    width:100%;
 `;
 
 export const ArrowIcon = styled.i`
@@ -56,8 +56,10 @@ export const SearchBarICon = styled.i`
     color:#807f7e;
     background:white;
     height:50%;
-    border-top-left-radius:50px;
-    border-bottom-left-radius:50px;
+    border-top-left-radius:${props => props.delete ? "0" : "50px"};
+    border-bottom-left-radius:${props => props.delete ? "0" : "50px"};
+    border-top-right-radius:${props => props.delete ? "50px" : "0"};
+    border-bottom-right-radius:${props => props.delete ? "50px" : "0"};
 `;
 
 export const SearchBarDiv = styled.div`
@@ -67,21 +69,14 @@ export const SearchBarDiv = styled.div`
 `;
 
 export const SearchBarInput = styled.input`
-    width:100%;
+    width:40%;
     height:50%;
     border:none;
+    border-top-right-radius:${props => props.bottom && props.bottom};
+    border-bottom-right-radius:${props => props.bottom && props.bottom};
     &:focus {
     outline: none;
     }
-`;
-
-export const DeleteIcon = styled.i`
-    color:#807f7e;
-    background-color:white;
-    height:50%;
-    border-top-left-radius:50px;
-    border-bottom-left-radius:50px;
-    font-size:14px;
 `;
 
 export const AccountDiv = styled.div`
@@ -119,23 +114,28 @@ export const DownArrow = styled.i`
 
 export const MidSecondDiv = styled.div`
     background-color:black;
-    height:25%;
     display:flex;
     align-items:flex-end;
+    background:black;
+    position:sticky;
+    top:10%;
+    z-index:999;
+    height:${props => props.height ? props.height : "25%"};
+    border-bottom:${props => props.border ? props.border : ""};
 
 `;
 
 export const Title = styled.h1`
     color:white;
     padding-left:25px;
-    font-size:48px;
-    height:50%;
+    font-size:${props => props.font ? props.font : "48px"};
 `;
 
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
-    background:black;
+    background:#121212;
+    padding-top:15px;
 `;
 
 export const Row = styled.div`
