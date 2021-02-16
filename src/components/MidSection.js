@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react';
+import React,{useState} from 'react';
 import
     {
         ArrowIcon,
@@ -31,7 +31,8 @@ import
         IconsDiv,
         PlayButton,
         IconDiv,
-    } from '../styled-components/MidSectionStyledComponents';
+} from '../styled-components/MidSectionStyledComponents';
+import {motion} from "framer-motion";
 
 const MidSection = () =>
 {
@@ -54,7 +55,7 @@ const MidSection = () =>
 
     const handleScroll = (e) =>
     {
-        if ( e.target.scrollTop > 50 )
+        if ( e.target.scrollTop > 0 )
         {
             setChangeColors( true );
         }
@@ -64,9 +65,49 @@ const MidSection = () =>
         }
     }
 
+    const searchBarVariants = {
+        start: {
+            background: "#373737",
+            height:"10%",
+            paddingTop:"15px",
+            display:"flex",
+            position:"sticky",
+            zIndex:"1",
+            width:" 100%",
+            top:"0%"
+        },
+        finish: {
+            background: "black",
+            zIndex:"999"
+        }
+    };
+
+    const animationVariants = {
+        start: {
+            display: "flex",
+            alignItems: "flex-end",
+            zIndex: "999",
+            position: "sticky",
+            fontSize: "30px",
+            top: "10%",
+            height:"22%",
+            border: "0px solid black",
+            background: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,55,55,1) 100%)"
+        },
+        finish: {
+            display: "flex",
+            alignItems: "center",
+            zIndex: "999",
+            borderBottom: "1px solid rgba(232,230,230,0.25)",
+            fontSize: "17px",
+            background: "black",
+            height:"8%",
+        }
+    };
+
     return (
         <MidSectionDiv onScroll={handleScroll} >
-            <MidFirstDiv>
+            <motion.MidFirstDiv variants={searchBarVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <SearchDiv>
                     <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
                     <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
@@ -81,10 +122,10 @@ const MidSection = () =>
                     <AccountName>Evan Peterson</AccountName>
                     <DownArrow className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
-            </MidFirstDiv>
-            <MidSecondDiv height={changeColors && "8%"} border={changeColors && "2px solid rgba(232,230,230,0.25)"}>
-                <Title font={changeColors && "34px"} >Home</Title>
-            </MidSecondDiv>
+            </motion.MidFirstDiv>
+            <motion.MidSecondDiv variants={animationVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
+                <Title>Home</Title>
+            </motion.MidSecondDiv>
             <Container>
                 <Row>
                     <TopPart>

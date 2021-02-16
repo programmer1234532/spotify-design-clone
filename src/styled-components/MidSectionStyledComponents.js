@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MidSectionDiv = styled.div`
-    background-color: green;
     width:100%;
     font-family:"Roboto",sans-serif;
     overflow-y:scroll;
@@ -9,7 +8,7 @@ export const MidSectionDiv = styled.div`
     &::-webkit-scrollbar {
     width: 15px;
     height: 15px;
-    background: black;
+    background: #171717;
     }
     &::-webkit-scrollbar-thumb {
         background: #5c5b5b;
@@ -80,7 +79,6 @@ export const SearchBarInput = styled.input`
 `;
 
 export const AccountDiv = styled.div`
-    background-color:black;
     display:flex;
     justify-content:flex-end;
     width:100%;
@@ -113,28 +111,19 @@ export const DownArrow = styled.i`
 `;
 
 export const MidSecondDiv = styled.div`
-    background-color:black;
     display:flex;
-    align-items:flex-end;
-    background:black;
-    position:sticky;
-    top:10%;
-    z-index:999;
-    height:${props => props.height ? props.height : "25%"};
-    border-bottom:${props => props.border ? props.border : ""};
-
+    align-items:center;
 `;
 
 export const Title = styled.h1`
     color:white;
     padding-left:25px;
-    font-size:${props => props.font ? props.font : "48px"};
 `;
 
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
-    background:#121212;
+    background:#171717;
     padding-top:15px;
 `;
 
@@ -176,7 +165,7 @@ export const ImageAndTextDiv = styled.div`
     display:flex;
     flex-direction:column;
     width:25%;
-    margin-right:${props => props.lastImage ? "0px" : "10px"};
+    margin-right:${props => props.lastImage ? "0px" : "25px"};
 `;
 
 export const ImageDiv = styled.div`
