@@ -16,6 +16,24 @@ export const MidSectionDiv = styled.div`
             background:#e8e6e6;
         }
     }
+    &::-webkit-scrollbar-button:single-button {
+        display: block;
+        border-style: solid;
+        width: 16px;
+        background: #171717;
+    }
+    
+    &::-webkit-scrollbar-button:single-button:vertical:decrement{
+        border-width: 0 8px 8px 8px;
+        height: 50px;
+        border-color: transparent transparent #5c5b5b transparent;
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:increment{
+        border-width: 8px 8px 0 8px;
+        height: 20px;
+        border-color: #5c5b5b transparent transparent transparent;
+    }
 `;
 
 export const MidFirstDiv = styled.div`

@@ -73,6 +73,23 @@ export const PlaylistsDiv = styled.div`
             background:#e8e6e6;
         }
     }
+    &::-webkit-scrollbar-button:single-button {
+        display: block;
+        border-style: solid;
+        width: 16px;
+        height: 10px;
+        background: black;
+    }
+    
+    &::-webkit-scrollbar-button:single-button:vertical:decrement{
+        border-width: 0px 8px 8px 8px;
+        border-color: transparent transparent #5c5b5b transparent;
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:increment{
+        border-width: 8px 8px 0 8px;
+        border-color: #5c5b5b transparent transparent transparent;
+    }
 `;
 
 export const PlaylistDiv = styled.div`
@@ -92,6 +109,9 @@ export const PlaylistSongs = styled.p`
     font-size:15px;
     font-weight:300;
     color:#e8e6e6;
+    padding-bottom:5px;
+    white-space: nowrap;
+    overflow: hidden;
     height:13.5%;
     transition:font 0.05s ease-in;
     &:hover{

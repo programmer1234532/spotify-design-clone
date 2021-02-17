@@ -17,6 +17,5 @@ export const TopDiv = styled.div`
 export const BottomDiv = styled.div`
     display:flex;
     height:100%;
-    background-color:green;
-   
+    background:red;
 `;
