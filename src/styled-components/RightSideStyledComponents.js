@@ -123,7 +123,25 @@ export const SongDescription = styled.div`
 `;
 
 export const ButtonDiv = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 0;
 
+    button{
+        color:white;
+        background:black;
+        outline:none;
+        border:2px solid #e8e6e6;
+        border-radius:20px;
+        padding:7px 35px;
+        font-size:16px;
+
+        &:hover{
+            padding: 8px 37px;
+            border:2px solid white;
+        }
+    }
 `;
 
 

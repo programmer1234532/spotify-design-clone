@@ -1,6 +1,7 @@
 import React from 'react';
 import
     {
+        ButtonDiv,
         FriendActivity,
         FriendsAccount,
         FriendsDiv,
@@ -176,9 +177,9 @@ const RightSide = () => {
                         <i className="fas fa-volume-up"></i>
                     </div>
                 </FriendsAccount>
-                <div>
+                <ButtonDiv>
                     <button>Find Friends</button>
-                </div>
+                </ButtonDiv>
             </FriendsDiv>
         </RightSideDiv>
     )
