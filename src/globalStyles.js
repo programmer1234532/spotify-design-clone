@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
   body{
   height: 100vh;
   }
+
+  p{
+    color: #bdbdbd;
+  }
 `;
  
 export default GlobalStyle;

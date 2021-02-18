@@ -1,22 +1,48 @@
-import React from 'react';
-import { BottomSideDiv } from "../styled-components/BottomSideStyledComponents";
+import React,{useState} from 'react';
+import
+    {
+        FirstBottomDiv,
+        ImageDiv,
+        SongInfo,
+        MidBottomDiv,
+        Controls,
+        MidSecondBottomDiv,
+} from "../styled-components/BottomSideStyledComponents";
 
-const BottomSide = () => {
+const BottomSide = () =>
+{
+    const [heartButton, setHeartButton] = useState( false );
+    const [playButton, setPlayButton] = useState( false );
+
     return (
-        <BottomSideDiv>
-            <div>
-                <div>
-                    <img></img>
+       <>
+            <FirstBottomDiv>
+                <ImageDiv>
+                    <img src="https://m.media-amazon.com/images/I/71hWV613MiL._SS500_.jpg"></img>
+                </ImageDiv>
+                <SongInfo>
+                    <h4>Thiago Silva</h4>
+                    <p>M Huncho</p>
+                </SongInfo>
+                <div style={{paddingBottom:"15px"}}>
+                    <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}/>
                 </div>
-                <div>
-                    <p></p>
-                    
-                </div>
-                <div></div>
-            </div>
-            <div></div>
-            <div></div>
-        </BottomSideDiv>
+            </FirstBottomDiv>
+            <MidBottomDiv>
+                <Controls>
+                    <i className="fas fa-random"></i>
+                    <i className="fas fa-step-backward"></i>
+                    <i style={{fontSize:"32px"}} onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
+                    <i className="fas fa-step-forward"></i>
+                    <i className="fas fa-redo"></i>
+                </Controls>
+                <MidSecondBottomDiv>
+                    <p>0:38</p>
+                    <progress value="25" max="100"></progress>
+                    <p>-2:37</p>
+                </MidSecondBottomDiv>
+            </MidBottomDiv>
+        </>
     )
 }
 

@@ -146,7 +146,7 @@ const MidSection = () =>
                                             <IconDiv >
                                                 <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
-                                            <IconDiv>
+                                            <IconDiv relative>
                                                 <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
                                             </IconDiv>
                                             <IconDiv>

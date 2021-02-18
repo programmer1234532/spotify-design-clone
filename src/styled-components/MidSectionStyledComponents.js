@@ -13,7 +13,7 @@ export const MidSectionDiv = styled.div`
     &::-webkit-scrollbar-thumb {
         background: #5c5b5b;
         &:hover{
-            background:#e8e6e6;
+            background:#999999;
         }
     }
     &::-webkit-scrollbar-button:single-button {
@@ -56,7 +56,7 @@ export const ArrowIcon = styled.i`
     padding:0 17px;
     margin-top:7px;
     opacity:0.8;
-    color:${props => props.color ? props.color : "#e8e6e6"};
+    color:${props => props.color ? props.color : "#999999"};
     font-size:20px;
     &:hover{
         color:${props => props.hover ? "white" : "#5c5b5b" };
@@ -195,12 +195,13 @@ export const TextDiv = styled.div`
     display:flex;
     flex-direction:column;
     height:70%;
-    color:white;
+    color:#bdbdbd;
 `;
 
 export const PlaylistName = styled.h2`
     margin-bottom:5px;
     font-size:16px;
+    color:white;
 `;
 
 export const PlaylistDescription = styled.p`
@@ -245,11 +246,12 @@ export const IconsDiv = styled.div`
     opacity:0;
     width:100%;
     height:100%;
-    color:#e8e6e6;
+    color:white;
     font-size:25px;
     display:flex;
     justify-content:center;
     align-items:center;
+    position: relative;
     &:hover{
         opacity:1;
     }
@@ -257,14 +259,16 @@ export const IconsDiv = styled.div`
 
 export const IconDiv = styled.div`
     display:flex;
+    margin:0 30px; 
     justify-content:center;
     align-items:center;
-    margin: 0 15px;
+    position: ${props => props.relative ? "relative" : ""};
 `;
 
 export const PlayButton = styled.i`
     font-size:55px;
     transition:icon 1s ease-in;
+    position: ${props => props.position ? "static" : "absolute"};
     &:hover{
         color:white;
         font-size:58px;

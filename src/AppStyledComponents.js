@@ -9,7 +9,7 @@ export const AppMainDiv = styled.div`
 
 export const TopDiv = styled.div`
     display:flex;
-    height:90%;
+    height:89%;
     
    
 `;
@@ -17,5 +17,7 @@ export const TopDiv = styled.div`
 export const BottomDiv = styled.div`
     display:flex;
     height:100%;
-    background:red;
+    background:#2b2b2b;
+    padding: 10px 15px;
+    font-family:"Roboto", sans-serif;
 `;

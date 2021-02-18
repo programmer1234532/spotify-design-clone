@@ -19,7 +19,7 @@ export const RightSideDiv = styled.div`
     &::-webkit-scrollbar-thumb {
         background: #5c5b5b;
         &:hover{
-            background:#e8e6e6;
+            background:#bdbdbd;
         }
     }
     &::-webkit-scrollbar-button:single-button {
@@ -108,7 +108,7 @@ export const SongDescription = styled.div`
     }
 
     p{
-        color:#e8e6e6;
+        color:#bdbdbd;
         font-size:13px; 
         padding-bottom:5px;
         white-space: nowrap;
@@ -118,6 +118,7 @@ export const SongDescription = styled.div`
         i{
             font-size:17px;
             padding-right:2px;
+            color:#bdbdbd;
         }
     }
 `;
@@ -126,13 +127,15 @@ export const ButtonDiv = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:40px 0;
+    padding:50px 0;
+    position:relative;
 
     button{
         color:white;
+        position:absolute;
         background:black;
         outline:none;
-        border:2px solid #e8e6e6;
+        border:2px solid #bdbdbd;
         border-radius:20px;
         padding:7px 35px;
         font-size:16px;
@@ -140,6 +143,7 @@ export const ButtonDiv = styled.div`
         &:hover{
             padding: 8px 37px;
             border:2px solid white;
+            color:white;
         }
     }
 `;

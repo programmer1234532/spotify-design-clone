@@ -37,8 +37,8 @@ export const IconDiv = styled.div`
     display:flex;
     font-weight:300;
     padding-bottom:15px;
-    color:#e8e6e6;
-    -webkit-text-stroke: 0px #e8e6e6;
+    color:#bdbdbd;
+    -webkit-text-stroke: 0px #bdbdbd;
     transition:font 0.05s ease-in;
     
     &:hover{
@@ -53,7 +53,7 @@ export const Icon = styled.i`
 
 export const Paragraph = styled.p`
     font-size:16px;
-    color:#e8e6e6;
+    color:#bdbdbd;
 
 `;
 
@@ -70,7 +70,7 @@ export const PlaylistsDiv = styled.div`
     &::-webkit-scrollbar-thumb {
         background: #5c5b5b;
         &:hover{
-            background:#e8e6e6;
+            background:#bdbdbd;
         }
     }
     &::-webkit-scrollbar-button:single-button {
@@ -102,13 +102,13 @@ export const PlaylistHeader = styled.p`
     font-size:13px;
     font-weight:200;
     height:11%;
-    color:#e8e6e6;
+    color:#a3a3a3;
 `;
 
 export const PlaylistSongs = styled.p`
     font-size:15px;
     font-weight:300;
-    color:#e8e6e6;
+    color:#bdbdbd;
     padding-bottom:5px;
     white-space: nowrap;
     overflow: hidden;
@@ -134,7 +134,7 @@ export const AddPlaylistDiv = styled.div`
     align-items:center;
     padding-left:20px;
     font-weight:300;
-    color:#e8e6e6;
+    color:#bdbdbd;
     height:50%;
     transition:font 0.05s ease-in;
     &:hover{
