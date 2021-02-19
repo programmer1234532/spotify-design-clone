@@ -7,6 +7,7 @@ import
         MidBottomDiv,
         Controls,
         MidSecondBottomDiv,
+        MidRightDiv
 } from "../styled-components/BottomSideStyledComponents";
 
 const BottomSide = () =>
@@ -38,10 +39,17 @@ const BottomSide = () =>
                 </Controls>
                 <MidSecondBottomDiv>
                     <p>0:38</p>
-                    <progress value="25" max="100"></progress>
+                    <progress value="2" max="10"></progress>
                     <p>-2:37</p>
                 </MidSecondBottomDiv>
             </MidBottomDiv>
+            <MidRightDiv>
+                <i className="fas fa-align-right"></i>
+                <i className="fas fa-desktop"></i>
+                <i className="fas fa-volume-down"></i>
+                <progress value="6" max="10"></progress>
+                <i className="fas fa-expand-alt"></i>
+            </MidRightDiv>
         </>
     )
 }
