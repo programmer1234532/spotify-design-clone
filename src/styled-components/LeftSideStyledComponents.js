@@ -4,7 +4,7 @@ import { FaEllipsisH } from 'react-icons/fa';
 
 export const LeftSideDiv = styled.div`
     background-color: black;
-    width:300px;
+    flex:0 0 200px;
     height:100%;
     padding-top:20px;
     display:flex;

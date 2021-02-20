@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const MidSectionDiv = styled.div`
-    width:100%;
     font-family:"Roboto",sans-serif;
     overflow-y:scroll;
     overflow-x:hidden;
+    flex:2;
     &::-webkit-scrollbar {
     width: 15px;
     height: 15px;
@@ -37,24 +37,15 @@ export const MidSectionDiv = styled.div`
 `;
 
 export const MidFirstDiv = styled.div`
-    height:10%;
-    background-color:black;
-    padding-top:15px;
-    display:flex;
-    position:sticky;
-    z-index:999;
-    width: 100%;
-    top:0;
 `;
 
 export const SearchDiv = styled.div`
     display:flex;
-    width:100%;
+    flex:1 1;
 `;
 
 export const ArrowIcon = styled.i`
     padding:0 17px;
-    margin-top:7px;
     opacity:0.8;
     color:${props => props.color ? props.color : "#999999"};
     font-size:20px;
@@ -66,13 +57,10 @@ export const ArrowIcon = styled.i`
 `;
 
 export const SearchBarICon = styled.i`
-    padding-top:5px;
-    padding-left:5px;
-    padding-right:7px;
-    font-size:14px;
+    
+    padding:5px 0;
     color:#807f7e;
     background:white;
-    height:50%;
     border-top-left-radius:${props => props.delete ? "0" : "50px"};
     border-bottom-left-radius:${props => props.delete ? "0" : "50px"};
     border-top-right-radius:${props => props.delete ? "50px" : "0"};
@@ -80,14 +68,11 @@ export const SearchBarICon = styled.i`
 `;
 
 export const SearchBarDiv = styled.div`
-    display:flex;
-    width:100%;
-    padding-top:5px;
+    display:flex;   
 `;
 
 export const SearchBarInput = styled.input`
-    width:40%;
-    height:50%;
+    padding:5px 0;
     border:none;
     border-top-right-radius:${props => props.bottom && props.bottom};
     border-bottom-right-radius:${props => props.bottom && props.bottom};
@@ -99,11 +84,9 @@ export const SearchBarInput = styled.input`
 export const AccountDiv = styled.div`
     display:flex;
     justify-content:flex-end;
-    width:100%;
     padding-right:25px;
-    padding-top:4px; 
     color:white;
-    
+    flex:1 0;
 `;
 
 export const AccountImage = styled.img`
@@ -117,6 +100,7 @@ export const AccountName = styled.p`
     padding-top:4px;
     padding-right:20px;
     font-size:15px;
+    color:white;
     cursor:context-menu;
     &:hover{
         text-decoration:underline;
@@ -129,13 +113,10 @@ export const DownArrow = styled.i`
 `;
 
 export const MidSecondDiv = styled.div`
-    display:flex;
-    align-items:center;
 `;
 
 export const Title = styled.h1`
     color:white;
-    padding-left:25px;
 `;
 
 export const Container = styled.div`
@@ -238,7 +219,7 @@ export const SettingsDiv = styled.div`
     align-items:center;
     &:hover{
         
-        background-color:rgba(0,0,0,0.6);
+        background-color:rgba(0,0,0,0.5);
     }
 `;
 

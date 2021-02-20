@@ -68,9 +68,9 @@ const MidSection = () =>
     const searchBarVariants = {
         start: {
             background: "#373737",
-            height:"10%",
-            paddingTop:"15px",
-            display:"flex",
+            paddingTop: "2%",
+            display: "flex",
+            alignItems:"center",
             position:"sticky",
             zIndex:"1",
             width:" 100%",
@@ -78,7 +78,9 @@ const MidSection = () =>
         },
         finish: {
             background: "black",
-            zIndex:"999"
+            zIndex: "999",
+            paddingTop: "2%",
+            top:"0%"
         }
     };
 
@@ -86,22 +88,23 @@ const MidSection = () =>
         start: {
             display: "flex",
             alignItems: "flex-end",
-            zIndex: "999",
+            zIndex: "1",
+            padding: "0 2%",
             position: "sticky",
+            top:"0%",
             fontSize: "30px",
-            top: "10%",
-            height:"22%",
             border: "0px solid black",
             background: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,55,55,1) 100%)"
         },
         finish: {
             display: "flex",
+            padding:"0 2%",
             alignItems: "center",
             zIndex: "999",
             borderBottom: "1px solid rgba(232,230,230,0.25)",
             fontSize: "17px",
+            top:"10%",
             background: "black",
-            height:"8%",
         }
     };
 
@@ -112,9 +115,11 @@ const MidSection = () =>
                     <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
                     <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
                     <SearchBarDiv>
-                        <SearchBarICon className="fas fa-search"></SearchBarICon>
-                        <SearchBarInput onChange={checkDeleteButton} bottom={deleteButton ? "0px" : "50px"} placeholder="Search"></SearchBarInput>
-                        {deleteButton && <SearchBarICon delete className="fas fa-times"></SearchBarICon> }
+                            <SearchBarICon className="fas fa-search"></SearchBarICon>
+                            <SearchBarInput onChange={checkDeleteButton} bottom={deleteButton ? "0px" : "50px"} placeholder="Search"></SearchBarInput>
+                        {deleteButton &&
+                                <SearchBarICon delete className="fas fa-times"></SearchBarICon>
+                        }
                     </SearchBarDiv>
                 </SearchDiv>
                 <AccountDiv>
@@ -123,7 +128,7 @@ const MidSection = () =>
                     <DownArrow className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
             </motion.MidFirstDiv>
-            <motion.MidSecondDiv variants={animationVariants} transition={{duration:.15} } initial="start" animate={changeColors ? "finish" : "start" }>
+            <motion.MidSecondDiv variants={animationVariants} transition={{duration:.3} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <Title>Home</Title>
             </motion.MidSecondDiv>
             <Container>
@@ -186,9 +191,9 @@ const MidSection = () =>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
-                                    <SettingsDiv>
-                                    <IconsDiv>
+                                <Image style={{borderRadius:"100%"}} source="https://pyxis.nymag.com/v1/imgs/3a1/590/8f5ebf7b0b37bed6b276e98597f3fc5bd2-bad-bunny-covid.rsquare.w1200.jpg"></Image>
+                                    <SettingsDiv style={{borderRadius:"100%"}}>
+                                        <IconsDiv>
                                             <IconDiv >
                                                 <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
                                             </IconDiv>
@@ -202,9 +207,9 @@ const MidSection = () =>
                                     </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                                <PlaylistName style={{textAlign:"center"}}>Bad Bunny</PlaylistName>
+                                <PlaylistDescription></PlaylistDescription>
+                                <PlaylistFollowers></PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>

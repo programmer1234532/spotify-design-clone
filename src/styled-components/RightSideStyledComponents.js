@@ -3,13 +3,17 @@ import styled from "styled-components";
 
 export const RightSideDiv = styled.div`
     background-color: black;
-    width:430px;
+    flex:0 0 320px;
     display:flex;
     flex-direction:column;
     overflow-y:scroll;
     overflow-x:hidden;
     padding-left:15px;
     font-family: 'Roboto', sans-serif;
+
+    @media screen and (max-width:1180px){
+        display:none;
+    }
 
     &::-webkit-scrollbar {
     width: 15px;
