@@ -6,16 +6,21 @@ export const LeftSideDiv = styled.div`
     background-color: black;
     flex:0 0 200px;
     height:100%;
-    padding-top:20px;
+    overflow:hidden;
+    padding-top:1%;
     display:flex;
     flex-direction:column;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     cursor: context-menu;
+
+    @media screen and (max-width:810px){
+        display:none;
+    }
 `;
 
 export const FirstDiv = styled.div`
-    height:9%;
-    padding-left:20px;
+    flex:0 0; 
+    padding-left:10%;
 `; 
 
 export const MoreOptions = styled( FaEllipsisH )`
@@ -24,43 +29,46 @@ export const MoreOptions = styled( FaEllipsisH )`
 `;
 
 export const SecondDiv = styled.div`
-    margin-top:10px;
+    margin-top:2%;
+    margin-bottom:4%;
     background-color:black;
-    height:20%;
     color:white;
     display:flex;
+    flex:0 0;
     flex-direction:column;
-    padding-left:20px;
+    padding-left:10%;
+    padding-top:10%;
 `;
 
 export const IconDiv = styled.div`
     display:flex;
+    align-items:center;
     font-weight:300;
-    padding-bottom:15px;
+    padding-bottom:8%;
     color:#bdbdbd;
-    -webkit-text-stroke: 0px #bdbdbd;
-    transition:font 0.05s ease-in;
-    
+
     &:hover{
-        -webkit-text-stroke: 0.7px white;
+        color:white !important;
+    }
+
+    &:active{
+        border-left:4px solid green;
     }
 `;
 
 export const Icon = styled.i`
-    margin-right:22px;
     font-size:20px;
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.a`
     font-size:16px;
-    color:#bdbdbd;
 
 `;
 
 export const PlaylistsDiv = styled.div`
     background-color:black;
-    padding-left:20px;
-    margin-top:20px;
+    padding-left:10%;
+    margin-top:12%;
     overflow-y:scroll;
     &::-webkit-scrollbar {
     width: 15px;
@@ -95,24 +103,24 @@ export const PlaylistsDiv = styled.div`
 export const PlaylistDiv = styled.div`
     display:flex;
     flex-direction:column;
-    height:60%;
+    margin-bottom:15%;
 `;
 
-export const PlaylistHeader = styled.p`
+export const PlaylistHeader = styled.h5`
     font-size:13px;
     font-weight:200;
-    height:11%;
     color:#a3a3a3;
+    padding-bottom:5%;
 `;
 
-export const PlaylistSongs = styled.p`
+export const PlaylistSongs = styled.a`
     font-size:15px;
     font-weight:300;
     color:#bdbdbd;
-    padding-bottom:5px;
+    padding-bottom:8%;;
     white-space: nowrap;
     overflow: hidden;
-    height:13.5%;
+    text-overflow: ellipsis;
     transition:font 0.05s ease-in;
     &:hover{
         font-weight:400;
@@ -123,10 +131,11 @@ export const PlaylistSongs = styled.p`
 export const NewPlaylistDiv = styled.div`
     height:12%;
     display:flex;
+    flex:0 0 50px;
     align-items:center;
-    margin-top:4px;
+    padding:7% 0;
     background-color:black;
-    border-top:0.5px solid rgba(232,230,230,0.25);
+    border-top:2px solid rgba(232,230,230,0.25);
 `;
 
 export const AddPlaylistDiv = styled.div`
@@ -149,9 +158,8 @@ export const NewPlaylistIcon = styled.i`
     font-size:26px;
 `;
 
-export const NewPlaylistParagraph = styled.p`
+export const NewPlaylistParagraph = styled.a`
     font-size:16px;
-    padding-top:3px;
 `;
 
 

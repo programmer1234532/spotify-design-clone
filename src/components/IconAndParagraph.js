@@ -4,8 +4,12 @@ import { Icon, IconDiv, Paragraph } from '../styled-components/LeftSideStyledCom
 const IconAndParagraph = ({icon, words}) => {
     return (
         <IconDiv>
-            <Icon className={icon}></Icon>
-            <Paragraph>{words}</Paragraph>
+            <div style={{minWidth:"25px",marginRight:"10%"}}>
+                <Icon className={icon}></Icon>
+            </div>
+            <div>
+                <Paragraph>{words}</Paragraph>
+            </div>
         </IconDiv>
     )
 }

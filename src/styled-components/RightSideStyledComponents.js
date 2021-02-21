@@ -11,7 +11,7 @@ export const RightSideDiv = styled.div`
     padding-left:15px;
     font-family: 'Roboto', sans-serif;
 
-    @media screen and (max-width:1180px){
+    @media screen and (max-width:1268px){
         display:none;
     }
 
@@ -99,8 +99,10 @@ export const SongDescription = styled.div`
     padding-right:5px;
     overflow:hidden;
     flex-grow:1;
+    display:flex;
+    flex-direction:column;
 
-    p:hover,h4:hover{
+    a:hover,h4:hover{
         text-decoration:underline;
         cursor:pointer; 
         color:white;  
@@ -111,7 +113,7 @@ export const SongDescription = styled.div`
         padding-bottom:5px;
     }
 
-    p{
+    a{
         color:#bdbdbd;
         font-size:13px; 
         padding-bottom:5px;

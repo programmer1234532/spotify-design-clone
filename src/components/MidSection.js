@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import
     {
         ArrowIcon,
@@ -41,6 +41,10 @@ const MidSection = () =>
     const [heartButton, setHeartButton] = useState( false );
     const [changeColors, setChangeColors] = useState( false );
 
+    useEffect(() => {
+        
+    }, [])
+
     const checkDeleteButton = (e) =>
     {
         if ( e.target.value.length > 0 )
@@ -73,14 +77,16 @@ const MidSection = () =>
             alignItems:"center",
             position:"sticky",
             zIndex:"1",
-            width:" 100%",
+            width: " 100%",
+            height:"8%",
             top:"0%"
         },
         finish: {
             background: "black",
             zIndex: "999",
             paddingTop: "2%",
-            top:"0%"
+            top: "0%",
+            height:"8%"
         }
     };
 
@@ -89,21 +95,25 @@ const MidSection = () =>
             display: "flex",
             alignItems: "flex-end",
             zIndex: "1",
-            padding: "0 2%",
+            paddingLeft: "2.5%",
+            paddingRight: "2.5%",
+            paddingTop:"12%",
             position: "sticky",
-            top:"0%",
+            top: "0%",
             fontSize: "30px",
             border: "0px solid black",
             background: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,55,55,1) 100%)"
         },
         finish: {
             display: "flex",
-            padding:"0 2%",
+            paddingLeft: "2.5%",
+            paddingRight: "2.5%",
+            paddingTop:"2%",
             alignItems: "center",
             zIndex: "999",
             borderBottom: "1px solid rgba(232,230,230,0.25)",
             fontSize: "17px",
-            top:"10%",
+            top: "6%",
             background: "black",
         }
     };
@@ -145,20 +155,20 @@ const MidSection = () =>
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image source="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
-                                    <SettingsDiv>
-                                        <IconsDiv>
-                                            <IconDiv >
-                                                <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
-                                            </IconDiv>
-                                            <IconDiv relative>
-                                                <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
-                                            </IconDiv>
-                                            <IconDiv>
-                                                <i class="fas fa-ellipsis-h"></i>
-                                            </IconDiv>
-                                        </IconsDiv>
-                                    </SettingsDiv>
+                                <Image src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
+                                <SettingsDiv>
+                                    <IconsDiv>
+                                        <IconDiv >
+                                            <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
+                                        </IconDiv>
+                                        <IconDiv relative>
+                                            <PlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></PlayButton>
+                                        </IconDiv>
+                                        <IconDiv>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </IconDiv>
+                                    </IconsDiv>
+                                </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
                                 <PlaylistName>On Repeat</PlaylistName>
@@ -166,9 +176,9 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
+                        <ImageAndTextDiv secondImage>
                             <ImageDiv>
-                                <Image source="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
+                                <Image src="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
                                             <IconDiv >
@@ -189,10 +199,10 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
-                            <ImageDiv>
-                                <Image style={{borderRadius:"100%"}} source="https://pyxis.nymag.com/v1/imgs/3a1/590/8f5ebf7b0b37bed6b276e98597f3fc5bd2-bad-bunny-covid.rsquare.w1200.jpg"></Image>
-                                    <SettingsDiv style={{borderRadius:"100%"}}>
+                        <ImageAndTextDiv thirdImage>
+                            <ImageDiv >
+                                <Image src="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
+                                    <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
                                                 <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}></i>
@@ -214,7 +224,7 @@ const MidSection = () =>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
                                             <IconDiv >
@@ -250,7 +260,7 @@ const MidSection = () =>
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
                                             <IconDiv >
@@ -271,9 +281,9 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
+                        <ImageAndTextDiv secondImage>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
                                             <IconDiv >
@@ -294,9 +304,9 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
-                            <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                        <ImageAndTextDiv thirdImage>
+                            <ImageDiv style={{clipPath:"circle(50%)"}}>
+                                <Image src="https://pyxis.nymag.com/v1/imgs/3a1/590/8f5ebf7b0b37bed6b276e98597f3fc5bd2-bad-bunny-covid.rsquare.w1200.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
@@ -312,14 +322,14 @@ const MidSection = () =>
                                     </SettingsDiv>
                             </ImageDiv>
                             <TextDiv>
-                                <PlaylistName>On Repeat</PlaylistName>
-                                <PlaylistDescription>The songs you can't get enough of right now</PlaylistDescription>
-                                <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
+                                <PlaylistName style={{textAlign:"center"}}>Bad Bunny</PlaylistName>
+                                <PlaylistDescription></PlaylistDescription>
+                                <PlaylistFollowers></PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
@@ -355,7 +365,7 @@ const MidSection = () =>
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
@@ -376,9 +386,9 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
+                        <ImageAndTextDiv secondImage>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
@@ -399,9 +409,9 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv>
+                        <ImageAndTextDiv thirdImage>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
@@ -424,7 +434,7 @@ const MidSection = () =>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv>
-                                <Image source="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
+                                <Image src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >

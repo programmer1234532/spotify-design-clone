@@ -23,11 +23,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -39,11 +39,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -55,11 +55,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist fsfsfsfsfsffsfsfsfsfsfsfsfsf
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -71,11 +71,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -87,11 +87,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -103,11 +103,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -119,11 +119,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -135,11 +135,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -151,11 +151,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>
@@ -167,11 +167,11 @@ const RightSide = () => {
                     </FriendsImageDiv>
                     <SongDescription>
                         <h4>jotino14</h4>
-                        <p>Decode</p>
-                        <p>Paramore</p>
-                        <p>
+                        <a>Decode</a>
+                        <a>Paramore</a>
+                        <a>
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
-                        </p>
+                        </a>
                     </SongDescription>
                     <div style={{marginRight:"15px"}}>
                         <i className="fas fa-volume-up"></i>

@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
 
   body{
   height: 100vh;
+
+  @media screen and (max-width:600px){
+    overflow-y:hidden;      
+  }
   }
 
   p{
