@@ -11,6 +11,13 @@ export const FirstBottomDiv = styled.div`
     @media screen and (max-width:1125px){
             flex:3 0;
     }
+
+    @media screen and (max-width:700px){
+        i{
+            display:none;
+        }
+    }
+    
 `;
 
 export const ImageDiv = styled.div`
@@ -58,6 +65,10 @@ export const MidSecondBottomDiv = styled.div`
     p{
         margin:0 2%;
         font-size:12px;
+    }
+
+    @media screen and (max-width:700px){
+       display:none;
     }
 
     progress{
@@ -112,14 +123,16 @@ export const MidRightDiv = styled.div`
         width:4.5rem;
     }
 
-    
-
     i{
         margin:0 15px;
         color:#bdbdbd;
 
         &:hover{
             color:white;
+        }
+
+        @media screen and (max-width:700px){
+        display:${props => props.playButton ? "block" : "none"};
         }
     }
 

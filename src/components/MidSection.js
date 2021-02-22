@@ -40,9 +40,19 @@ const MidSection = () =>
     const [playButton, setPlayButton] = useState( false );
     const [heartButton, setHeartButton] = useState( false );
     const [changeColors, setChangeColors] = useState( false );
-
+    const [screenSize, setScreenSize] = useState( false );
+    
     useEffect(() => {
-        
+        const screen = window.innerWidth;
+        if ( screen <= 500 )
+        {
+            setScreenSize( true );
+        }
+        else
+        {
+            setScreenSize( false );
+        }
+       
     }, [])
 
     const checkDeleteButton = (e) =>
@@ -101,7 +111,6 @@ const MidSection = () =>
             position: "sticky",
             top: "0%",
             fontSize: "30px",
-            border: "0px solid black",
             background: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,55,55,1) 100%)"
         },
         finish: {
@@ -120,10 +129,10 @@ const MidSection = () =>
 
     return (
         <MidSectionDiv onScroll={handleScroll} >
-            <motion.MidFirstDiv variants={searchBarVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
+            <MidFirstDiv as={motion.div} style={{display:screenSize ? "none !important" : "flex"}} variants={searchBarVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <SearchDiv>
-                    <ArrowIcon color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
-                    <ArrowIcon hover className="fas fa-chevron-right"></ArrowIcon>
+                    <ArrowIcon hide color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                    <ArrowIcon hide hover className="fas fa-chevron-right"></ArrowIcon>
                     <SearchBarDiv>
                             <SearchBarICon className="fas fa-search"></SearchBarICon>
                             <SearchBarInput onChange={checkDeleteButton} bottom={deleteButton ? "0px" : "50px"} placeholder="Search"></SearchBarInput>
@@ -137,10 +146,10 @@ const MidSection = () =>
                     <AccountName>Evan Peterson</AccountName>
                     <DownArrow className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
-            </motion.MidFirstDiv>
-            <motion.MidSecondDiv variants={animationVariants} transition={{duration:.3} } initial="start" animate={changeColors ? "finish" : "start" }>
+            </MidFirstDiv>
+            <MidSecondDiv as={motion.div} variants={animationVariants} transition={{duration:.3} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <Title>Home</Title>
-            </motion.MidSecondDiv>
+            </MidSecondDiv>
             <Container>
                 <Row>
                     <TopPart>

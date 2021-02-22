@@ -4,6 +4,7 @@ export const MidSectionDiv = styled.div`
     font-family:"Roboto",sans-serif;
     overflow-y:scroll;
     overflow-x:hidden;
+
     flex:2;
     &::-webkit-scrollbar {
     width: 15px;
@@ -43,6 +44,10 @@ export const SearchDiv = styled.div`
     display:flex;
     padding-bottom:2%;
     flex:0 1;
+
+    @media screen and (max-width:810px){
+        padding-left:2%;
+    }
 `;
 
 export const ArrowIcon = styled.i`
@@ -53,6 +58,10 @@ export const ArrowIcon = styled.i`
     &:hover{
         color:${props => props.hover ? "white" : "#5c5b5b" };
         opacity:${props => props.hover ? "1" : "0.8" };
+    }
+
+    @media screen and (max-width:810px){
+        display:${props => props.hide ? "none" : "block"}
     }
 
 `;
@@ -69,7 +78,7 @@ export const SearchBarICon = styled.i`
 `;
 
 export const SearchBarDiv = styled.div`
-    display:flex;   
+    display:flex;  
 `;
 
 export const SearchBarInput = styled.input`
@@ -168,8 +177,8 @@ export const ImageAndTextDiv = styled.div`
     }
 
     @media screen and (max-width:600px){
-        display:${props => props.thirdImage || props.secondImage ? "none" : "flex"};
-        margin-right:${props => props.secondImage ? "0%" : "2.5%"};
+        display:${props => props.thirdImage || props.lastImage ? "none" : "flex"};
+        margin-right:${props => props.secondImage ? "0%" : "5%"};
     }
 
 `;

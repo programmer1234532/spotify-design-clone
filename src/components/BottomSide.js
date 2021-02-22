@@ -51,7 +51,7 @@ const BottomSide = () =>
             <MidRightDiv>
                 <i className="fas fa-align-right"></i>
                 <i className="fas fa-desktop"></i>
-                <i style={{minWidth:"16px"}} onClick={() => setVolumeButton(!volumeButton) } className={volumeButton ? "fas fa-volume-mute" : "fas fa-volume-down"}></i>
+                <i playButton style={{minWidth:"16px"}} onClick={() => setVolumeButton(!volumeButton) } className={volumeButton ? "fas fa-volume-mute" : "fas fa-volume-down"}></i>
                 <progress value="6" max="10"></progress>
                 <i className="fas fa-expand-alt"></i>
             </MidRightDiv>
