@@ -40,7 +40,6 @@ export const SecondDiv = styled.div`
     display:flex;
     flex:0 0;
     flex-direction:column;
-    padding-left:10%;
     padding-top:10%;
 `;
 
@@ -49,14 +48,17 @@ export const IconDiv = styled.div`
     align-items:center;
     font-weight:300;
     padding-bottom:8%;
+    padding-left:10%;
     color:#bdbdbd;
+    border-left:0px solid green;
+    transition:border .1s ease-in-out;
 
     &:hover{
         color:white !important;
     }
 
     &:active{
-        border-left:4px solid green;
+        border-left:8px solid green;
     }
 `;
 
@@ -71,7 +73,6 @@ export const Paragraph = styled.a`
 
 export const PlaylistsDiv = styled.div`
     background-color:black;
-    padding-left:10%;
     margin-top:12%;
     overflow-y:auto;
     &::-webkit-scrollbar {
@@ -115,10 +116,12 @@ export const PlaylistHeader = styled.h5`
     font-weight:200;
     color:#a3a3a3;
     padding-bottom:5%;
+    padding-left:10%;
 `;
 
 export const PlaylistSongs = styled.a`
     font-size:15px;
+    padding-left:10%;
     font-weight:300;
     color:#bdbdbd;
     padding-bottom:8%;;
@@ -126,10 +129,17 @@ export const PlaylistSongs = styled.a`
     overflow: hidden;
     text-overflow: ellipsis;
     transition:font 0.05s ease-in;
+    border-left:0px solid green;
+    transition:border .1s ease-in-out;
     &:hover{
         font-weight:400;
         color:white;
     }
+
+    &:active{
+        border-left:8px solid green;
+    }
+    
 `;
 
 export const NewPlaylistDiv = styled.div`
