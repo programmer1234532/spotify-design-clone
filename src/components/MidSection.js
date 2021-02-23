@@ -41,21 +41,7 @@ const MidSection = () =>
     const [playButton, setPlayButton] = useState( false );
     const [heartButton, setHeartButton] = useState( false );
     const [changeColors, setChangeColors] = useState( false );
-    const [screenSize, setScreenSize] = useState( false );
     
-    useEffect(() => {
-        const screen = window.innerWidth;
-        if ( screen <= 500 )
-        {
-            setScreenSize( true );
-        }
-        else
-        {
-            setScreenSize( false );
-        }
-       
-    }, [screenSize])
-
     const checkDeleteButton = (e) =>
     {
         if ( e.target.value.length > 0 )
@@ -111,6 +97,7 @@ const MidSection = () =>
             paddingTop:"12%",
             position: "sticky",
             top: "0%",
+            borderBottom: "0px solid transparent",
             fontSize: "30px",
             background: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,55,55,1) 100%)"
         },
@@ -147,11 +134,9 @@ const MidSection = () =>
                     <AccountName>Evan Peterson</AccountName>
                     <DownArrow className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
-                {screenSize && 
-                    <MobileSettings>
-                        <i className="fas fa-cog"></i>
-                    </MobileSettings>
-                }
+                <MobileSettings>
+                    <i className="fas fa-cog"></i>
+                </MobileSettings>        
             </MidFirstDiv>
             <MidSecondDiv as={motion.div} variants={animationVariants} transition={{duration:.3} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <Title>Home</Title>

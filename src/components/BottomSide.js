@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import
     {
         FirstBottomDiv,
@@ -16,20 +16,6 @@ const BottomSide = () =>
     const [heartButton, setHeartButton] = useState( false );
     const [playButton, setPlayButton] = useState( false );
     const [volumeButton, setVolumeButton] = useState( false );
-    const [screen, setScreen] = useState( false );
-
-    useEffect(() => {
-        const screenSize = window.innerWidth;
-        console.log( screenSize );
-        if ( screenSize <= 500 )
-        {
-            setScreen( true );
-        }
-        else
-        {
-            setScreen( false );
-        }
-    }, [])
 
     return (
        <>
@@ -58,9 +44,7 @@ const BottomSide = () =>
                     <progress  value="2" max="10"></progress>
                     <p>-2:37</p>
                 </MidSecondBottomDiv>
-                {screen && 
-                    <MobilePlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "fas fa-pause" : "fas fa-play"}></MobilePlayButton>
-                }
+                <MobilePlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "fas fa-pause" : "fas fa-play"}></MobilePlayButton>
             </MidBottomDiv>
             <MidRightDiv>
                 <i className="fas fa-align-right"></i>

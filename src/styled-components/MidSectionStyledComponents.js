@@ -78,7 +78,8 @@ export const SearchBarICon = styled.i`
 `;
 
 export const SearchBarDiv = styled.div`
-    display:flex;  
+    display:flex; 
+
 `;
 
 export const SearchBarInput = styled.input`
@@ -89,6 +90,10 @@ export const SearchBarInput = styled.input`
     &:focus {
     outline: none;
     }
+
+    @media screen and (max-width:300px){
+     width:110px;
+    } 
 `;
 
 export const AccountDiv = styled.div`
@@ -104,20 +109,20 @@ export const AccountDiv = styled.div`
 `;
 
 export const MobileSettings = styled.div`
-    display:flex;
-    justify-content:flex-end;
-    padding-right:5%;
-    align-items:center;
-    padding-bottom:2%;
-    color:white;
-    flex:1 0;
+    display:none;
 
-    @media screen and (min-width:501px){
-        display:none;
-    }
+    @media screen and (max-width:500px){
+        display:flex;
+        justify-content:flex-end;
+        padding-right:5%;
+        align-items:center;
+        padding-bottom:2%;
+        color:white;
+        flex:1 0;
 
-    i{
-        font-size:20px;
+        i{
+            font-size:20px;
+        }
     }
 `;
 

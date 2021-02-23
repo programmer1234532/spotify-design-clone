@@ -91,7 +91,7 @@ export const MobilePlayButton = styled.i`
     }
 
     @media screen and (max-width:375px){
-      font-size:1.9em;
+      font-size:1.7em;
     }
 
 `;
