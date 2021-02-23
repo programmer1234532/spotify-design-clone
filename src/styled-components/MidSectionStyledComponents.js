@@ -84,6 +84,7 @@ export const SearchBarDiv = styled.div`
 
 export const SearchBarInput = styled.input`
     padding:5px 0;
+    -webkit-appearance: none;
     border:none;
     border-top-right-radius:${props => props.bottom && props.bottom};
     border-bottom-right-radius:${props => props.bottom && props.bottom};
@@ -227,11 +228,16 @@ export const ImageDiv = styled.div`
     display:flex;
     position: relative;
     min-height:175px;
+    max-height:250px;
     width:100%;
     flex:1 0 ;
 
     @media screen and (max-width:370px){
         min-height:150px;
+    }
+
+    @media screen and (max-width:500px){
+        max-height:200px;
     }
 
     @media screen and (max-width:310px){
