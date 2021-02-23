@@ -83,7 +83,7 @@ export const SearchBarDiv = styled.div`
 `;
 
 export const SearchBarInput = styled.input`
-    padding:5px 0;
+    padding:5px 3px;
     -webkit-appearance: none;
     -webkit-border-radius: 0;   
     border:none;
@@ -239,6 +239,10 @@ export const ImageDiv = styled.div`
 
     @media screen and (max-width:500px){
         max-height:200px;
+    }
+
+    @media screen and (max-width:420px){
+        max-height:180px;
     }
 
     @media screen and (max-width:768px){
