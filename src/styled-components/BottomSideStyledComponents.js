@@ -17,6 +17,10 @@ export const FirstBottomDiv = styled.div`
             display:none;
         }
     }
+
+    @media screen and (max-width:500px){
+       flex:8;
+    }
     
 `;
 
@@ -36,16 +40,26 @@ export const SongInfo = styled.div`
     padding:0 7%;
     
 
-    p:hover,h4:hover{
+    a:hover,h4:hover{
         text-decoration:underline;
         color:white;
         cursor:pointer;
     }
 
-    p{
+    @media screen and (max-width:500px){
+       p{
+        font-size:18px;
+       }
+
+       h4{
+           font-size:20px;
+       }
+    }
+
+    a{
         color:#bdbdbd;
         padding-top:5%;
-        font-size:13px;
+        font-size:12.5px;
     }
 `;
 
@@ -55,6 +69,30 @@ export const MidBottomDiv = styled.div`
     align-items:center;
     justify-content:center;
     flex:7 2;
+    @media screen and (max-width:500px){
+        align-items:flex-end;
+        padding-right:5%;
+
+        i{
+            font-size:2.2em;
+            color:#bdbdbd;
+        }
+    }
+
+`;
+
+export const MobilePlayButton = styled.i`
+    display:none;
+
+    @media screen and (max-width:500px){
+        font-size:2.2em;
+        color:#bdbdbd;
+        display:flex;
+    }
+
+    @media screen and (max-width:375px){
+      font-size:1.9em;
+    }
 
 `;
 
@@ -100,6 +138,10 @@ export const Controls = styled.div`
     display:flex;
     align-items:center;
     flex:0 0;
+
+    @media screen and (max-width:500px){
+        display:none;
+    }
 
     i{
         font-size:16px;

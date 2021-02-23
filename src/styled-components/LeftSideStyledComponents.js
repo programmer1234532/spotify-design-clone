@@ -16,6 +16,10 @@ export const LeftSideDiv = styled.div`
     @media screen and (max-width:810px){
         display:none;
     }
+
+    @media screen and (min-width:1700px){
+       flex:0 0 250px;
+    }
 `;
 
 export const FirstDiv = styled.div`
@@ -69,7 +73,7 @@ export const PlaylistsDiv = styled.div`
     background-color:black;
     padding-left:10%;
     margin-top:12%;
-    overflow-y:scroll;
+    overflow-y:auto;
     &::-webkit-scrollbar {
     width: 15px;
     height: 15px;
@@ -160,6 +164,7 @@ export const NewPlaylistIcon = styled.i`
 
 export const NewPlaylistParagraph = styled.a`
     font-size:16px;
+    
 `;
 
 

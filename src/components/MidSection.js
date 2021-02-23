@@ -31,6 +31,7 @@ import
         IconsDiv,
         PlayButton,
         IconDiv,
+        MobileSettings,
 } from '../styled-components/MidSectionStyledComponents';
 import {motion} from "framer-motion";
 
@@ -53,7 +54,7 @@ const MidSection = () =>
             setScreenSize( false );
         }
        
-    }, [])
+    }, [screenSize])
 
     const checkDeleteButton = (e) =>
     {
@@ -129,7 +130,7 @@ const MidSection = () =>
 
     return (
         <MidSectionDiv onScroll={handleScroll} >
-            <MidFirstDiv as={motion.div} style={{display:screenSize ? "none !important" : "flex"}} variants={searchBarVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
+            <MidFirstDiv as={motion.div} variants={searchBarVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <SearchDiv>
                     <ArrowIcon hide color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
                     <ArrowIcon hide hover className="fas fa-chevron-right"></ArrowIcon>
@@ -146,6 +147,11 @@ const MidSection = () =>
                     <AccountName>Evan Peterson</AccountName>
                     <DownArrow className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
+                {screenSize && 
+                    <MobileSettings>
+                        <i className="fas fa-cog"></i>
+                    </MobileSettings>
+                }
             </MidFirstDiv>
             <MidSecondDiv as={motion.div} variants={animationVariants} transition={{duration:.3} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <Title>Home</Title>

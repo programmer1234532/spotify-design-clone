@@ -7,7 +7,8 @@ import
         MidBottomDiv,
         Controls,
         MidSecondBottomDiv,
-        MidRightDiv
+        MidRightDiv,
+        MobilePlayButton
 } from "../styled-components/BottomSideStyledComponents";
 
 const BottomSide = () =>
@@ -15,10 +16,20 @@ const BottomSide = () =>
     const [heartButton, setHeartButton] = useState( false );
     const [playButton, setPlayButton] = useState( false );
     const [volumeButton, setVolumeButton] = useState( false );
+    const [screen, setScreen] = useState( false );
 
     useEffect(() => {
-        
-    }, [volumeButton])
+        const screenSize = window.innerWidth;
+        console.log( screenSize );
+        if ( screenSize <= 500 )
+        {
+            setScreen( true );
+        }
+        else
+        {
+            setScreen( false );
+        }
+    }, [])
 
     return (
        <>
@@ -28,7 +39,7 @@ const BottomSide = () =>
                 </ImageDiv>
                 <SongInfo>
                     <h4>Thiago Silva</h4>
-                    <p>M Huncho</p>
+                    <a>M Huncho</a>
                 </SongInfo>
                 <div style={{paddingBottom:"15px"}}>
                     <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}/>
@@ -47,6 +58,9 @@ const BottomSide = () =>
                     <progress  value="2" max="10"></progress>
                     <p>-2:37</p>
                 </MidSecondBottomDiv>
+                {screen && 
+                    <MobilePlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "fas fa-pause" : "fas fa-play"}></MobilePlayButton>
+                }
             </MidBottomDiv>
             <MidRightDiv>
                 <i className="fas fa-align-right"></i>

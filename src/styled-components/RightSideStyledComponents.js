@@ -6,13 +6,17 @@ export const RightSideDiv = styled.div`
     flex:0 0 320px;
     display:flex;
     flex-direction:column;
-    overflow-y:scroll;
+    overflow-y:auto;
     overflow-x:hidden;
     padding-left:15px;
     font-family: 'Roboto', sans-serif;
 
     @media screen and (max-width:1268px){
         display:none;
+    }
+
+    @media screen and (min-width:1700px){
+       flex:0 0 370px;
     }
 
     &::-webkit-scrollbar {
@@ -84,14 +88,23 @@ export const FriendsImageDiv = styled.div`
     display:flex;
     align-items:center;
     margin:0 10px 0 5px;
+    position:relative;
+
+    i{
+        opacity:0;
+        font-size:45px;
+        position:absolute;
+        background:rgba(0,0,0,0.8);
+
+        &:hover{
+            opacity:1;
+        }
+    }
 
     img{
         height:45px;
         width:45px;
         border-radius:50px;
-        &:hover{
-            opacity:0.8;
-        }
     }
 `;
 

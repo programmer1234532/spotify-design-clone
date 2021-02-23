@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MidSectionDiv = styled.div`
     font-family:"Roboto",sans-serif;
-    overflow-y:scroll;
+    overflow-y:auto;
     overflow-x:hidden;
 
     flex:2;
@@ -98,6 +98,27 @@ export const AccountDiv = styled.div`
     padding-bottom:2%;
     color:white;
     flex:1 0;
+    @media screen and (max-width:500px){
+        display:none;
+    }
+`;
+
+export const MobileSettings = styled.div`
+    display:flex;
+    justify-content:flex-end;
+    padding-right:5%;
+    align-items:center;
+    padding-bottom:2%;
+    color:white;
+    flex:1 0;
+
+    @media screen and (min-width:501px){
+        display:none;
+    }
+
+    i{
+        font-size:20px;
+    }
 `;
 
 export const AccountImage = styled.img`
@@ -128,6 +149,10 @@ export const MidSecondDiv = styled.div`
 
 export const Title = styled.h1`
     color:white;
+
+    @media screen and (max-width:375px){
+      font-size:1.5em;
+    }
 `;
 
 export const Container = styled.div`
@@ -152,6 +177,9 @@ export const TopPart = styled.div`
 
 export const BottomPart = styled.div`
     display:flex;
+    @media screen and (max-width:400px){
+        flex-direction:column;
+    }
 `;
 
 export const PlaylistsTitle = styled.div`
@@ -181,6 +209,12 @@ export const ImageAndTextDiv = styled.div`
         margin-right:${props => props.secondImage ? "0%" : "5%"};
     }
 
+    @media screen and (max-width:400px){
+        margin-right:0;
+        flex-direction:row;
+        margin-top:5%;
+    }
+
 `;
 
 export const ImageDiv = styled.div`
@@ -190,6 +224,14 @@ export const ImageDiv = styled.div`
     min-height:175px;
     width:100%;
     flex:1 0 ;
+
+    @media screen and (max-width:370px){
+        min-height:150px;
+    }
+
+    @media screen and (max-width:310px){
+        min-height:130px;
+    }
 `;
 
 export const TextDiv = styled.div`
@@ -199,12 +241,26 @@ export const TextDiv = styled.div`
     flex:0 1;
     min-height:125px;
 
+    @media screen and (max-width:400px){
+        flex:1 1;
+        padding-left:5%;
+        justify-content:center;
+        background:#2b2b2b;
+        margin-bottom:5%;
+        border-top-right-radius:10px;
+        border-bottom-right-radius:10px;
+    }
 `;
 
 export const PlaylistName = styled.h2`
     margin-bottom:4%;
     font-size:16px;
     color:white;
+
+    @media screen and (max-width:400px){
+        margin-bottom:8%;
+        font-size:1.6em;
+    }
 `;
 
 export const PlaylistDescription = styled.p`
@@ -212,6 +268,9 @@ export const PlaylistDescription = styled.p`
     font-weight:300;
     font-size:14px;
     font-family: sans-serif;
+    @media screen and (max-width:400px){
+        display:none;
+    }
 `;
 
 export const PlaylistFollowers = styled.p`
@@ -219,6 +278,9 @@ export const PlaylistFollowers = styled.p`
     font-weight:300;
     font-size:13px;
     font-family: sans-serif;
+    @media screen and (max-width:400px){
+        display:none;
+    }
 `;
 
 export const Image = styled.img`
@@ -226,6 +288,10 @@ export const Image = styled.img`
     height:auto;
     flex:1;
     object-fit:cover;
+
+    @media screen and (max-width:400px){
+       flex:2 0;
+    }
 `;
 
 export const SettingsDiv = styled.div`
