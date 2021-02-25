@@ -5,10 +5,10 @@ const IconAndParagraph = ({icon, words}) => {
     return (
         <IconDiv>
             <div style={{minWidth:"25px",marginRight:"10%"}}>
-                <Icon className={icon}></Icon>
+                <Icon tabIndex={0} className={icon}></Icon>
             </div>
             <div>
-                <Paragraph>{words}</Paragraph>
+                <Paragraph tabIndex={0}>{words}</Paragraph>
             </div>
         </IconDiv>
     )

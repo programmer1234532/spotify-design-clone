@@ -20,24 +20,24 @@ const BottomSide = () =>
     return (
        <>
             <FirstBottomDiv>
-                <ImageDiv>
+                <ImageDiv mageDiv>
                     <img src="https://m.media-amazon.com/images/I/71hWV613MiL._SS500_.jpg"></img>
                 </ImageDiv>
                 <SongInfo>
-                    <h4>Thiago Silva</h4>
-                    <a>M Huncho</a>
+                    <h4 tabIndex={0}>Thiago Silva</h4>
+                    <a tabIndex={0}>M Huncho</a>
                 </SongInfo>
                 <div style={{paddingBottom:"15px"}}>
-                    <i  onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}/>
+                    <i tabIndex={0}   onClick={() => setHeartButton(!heartButton) } className={heartButton ? "fas fa-heart" : "far fa-heart"}/>
                 </div>
             </FirstBottomDiv>
             <MidBottomDiv>
                 <Controls>
-                    <i style={{color:"#5c5b5b"}} className="fas fa-random"></i>
-                    <i className="fas fa-step-backward"></i>
-                    <i style={{fontSize:"32px"}} onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
-                    <i className="fas fa-step-forward"></i>
-                    <i style={{color:"#5c5b5b"}} className="fas fa-redo"></i>
+                    <i tabIndex={0}  style={{color:"#5c5b5b"}} className="fas fa-random"></i>
+                    <i tabIndex={0}  className="fas fa-step-backward"></i>
+                    <i tabIndex={0}  style={{fontSize:"32px"}} onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
+                    <i tabIndex={0}  className="fas fa-step-forward"></i>
+                    <i tabIndex={0}  style={{color:"#5c5b5b"}} className="fas fa-redo"></i>
                 </Controls>
                 <MidSecondBottomDiv>
                     <p>0:38</p>
@@ -47,11 +47,11 @@ const BottomSide = () =>
                 <MobilePlayButton onClick={() => setPlayButton(!playButton) } className={playButton ? "fas fa-pause" : "fas fa-play"}></MobilePlayButton>
             </MidBottomDiv>
             <MidRightDiv>
-                <i className="fas fa-align-right"></i>
-                <i className="fas fa-desktop"></i>
-                <i playButton style={{minWidth:"16px"}} onClick={() => setVolumeButton(!volumeButton) } className={volumeButton ? "fas fa-volume-mute" : "fas fa-volume-down"}></i>
+                <i tabIndex={0}  className="fas fa-align-right"></i>
+                <i tabIndex={0}  className="fas fa-desktop"></i>
+                <i tabIndex={0}  playButton style={{minWidth:"16px"}} onClick={() => setVolumeButton(!volumeButton) } className={volumeButton ? "fas fa-volume-mute" : "fas fa-volume-down"}></i>
                 <progress value="6" max="10"></progress>
-                <i className="fas fa-expand-alt"></i>
+                <i tabIndex={0}  className="fas fa-expand-alt"></i>
             </MidRightDiv>
         </>
     )

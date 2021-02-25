@@ -242,7 +242,7 @@ export const ImageDiv = styled.div`
     }
 
     @media screen and (max-width:420px){
-        max-height:180px;
+        max-height:150px;
     }
 
     @media screen and (max-width:768px){
