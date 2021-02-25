@@ -47,7 +47,7 @@ export const IconDiv = styled.div`
     display:flex;
     align-items:center;
     font-weight:300;
-    padding-bottom:8%;
+    margin-bottom:8%;
     padding-left:10%;
     color:#bdbdbd;
     border-left:0px solid green;
@@ -58,7 +58,7 @@ export const IconDiv = styled.div`
     }
 
     &:active{
-        border-left:8px solid green;
+        border-left:6px solid green;
     }
 `;
 
@@ -124,7 +124,7 @@ export const PlaylistSongs = styled.a`
     padding-left:10%;
     font-weight:300;
     color:#bdbdbd;
-    padding-bottom:8%;;
+    margin-bottom:8%;;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -137,7 +137,7 @@ export const PlaylistSongs = styled.a`
     }
 
     &:active{
-        border-left:8px solid green;
+        border-left:6px solid green;
     }
     
 `;
