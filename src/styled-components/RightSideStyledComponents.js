@@ -133,6 +133,7 @@ export const SongDescription = styled.div`
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-decoration:none;
 
         i{
             font-size:17px;

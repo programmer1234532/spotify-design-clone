@@ -26,10 +26,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -43,10 +43,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -60,10 +60,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist fsfsfsfsfsffsfsfsfsfsfsfsfsf
                         </a>
                     </SongDescription>
@@ -77,10 +77,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -94,10 +94,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -111,10 +111,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -128,10 +128,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -145,10 +145,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -162,10 +162,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -179,10 +179,10 @@ const RightSide = () =>
                         <i onClick={() => setPlayButton(!playButton) } className={playButton ? "far fa-pause-circle" : "far fa-play-circle"}></i>
                     </FriendsImageDiv>
                     <SongDescription>
-                        <h4 tabIndex={0}>jotino14</h4>
-                        <a tabIndex={0}>Decode</a>
-                        <a tabIndex={0}>Paramore</a>
-                        <a tabIndex={0}>
+                        <h4 >jotino14</h4>
+                        <a href="#">Decode</a>
+                        <a href="#">Paramore</a>
+                        <a href="#">
                             <i className="fab fa-itunes-note"></i> Danni's Ultimate Playlist
                         </a>
                     </SongDescription>
@@ -191,7 +191,7 @@ const RightSide = () =>
                     </div>
                 </FriendsAccount>
                 <ButtonDiv>
-                    <button tabIndex={0}>Find Friends</button>
+                    <button href="#">Find Friends</button>
                 </ButtonDiv>
             </FriendsDiv>
         </RightSideDiv>

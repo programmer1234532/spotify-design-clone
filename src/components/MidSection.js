@@ -119,8 +119,8 @@ const MidSection = () =>
         <MidSectionDiv onScroll={handleScroll} >
             <MidFirstDiv as={motion.div} variants={searchBarVariants} transition={{duration:.2} } initial="start" animate={changeColors ? "finish" : "start" }>
                 <SearchDiv>
-                    <ArrowIcon tabIndex={0} hide color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
-                    <ArrowIcon tabIndex={0} hide hover className="fas fa-chevron-right"></ArrowIcon>
+                    <ArrowIcon  hide color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                    <ArrowIcon  hide hover className="fas fa-chevron-right"></ArrowIcon>
                     <SearchBarDiv>
                             <SearchBarICon className="fas fa-search"></SearchBarICon>
                             <SearchBarInput onChange={checkDeleteButton} bottom={deleteButton ? "0px" : "50px"} placeholder="Search"></SearchBarInput>
@@ -131,8 +131,8 @@ const MidSection = () =>
                 </SearchDiv>
                 <AccountDiv>
                     <AccountImage src="https://images.unsplash.com/photo-1569466896818-335b1bedfcce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"></AccountImage>
-                    <AccountName tabIndex={0}>Evan Peterson</AccountName>
-                    <DownArrow tabIndex={0} className="fas fa-chevron-down"></DownArrow>
+                    <AccountName >Evan Peterson</AccountName>
+                    <DownArrow  className="fas fa-chevron-down"></DownArrow>
                 </AccountDiv>
                 <MobileSettings>
                     <i className="fas fa-cog"></i>
@@ -148,13 +148,13 @@ const MidSection = () =>
                             <h2>Shortcuts</h2>
                         </PlaylistsTitle>
                         <PlaylistsArrows>
-                            <ArrowIcon tabIndex={0} color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon tabIndex={0} hover className="fas fa-chevron-right"></ArrowIcon>
+                            <ArrowIcon  color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon  hover className="fas fa-chevron-right"></ArrowIcon>
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
                         <ImageAndTextDiv>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
                                 <SettingsDiv>
                                     <IconsDiv>
@@ -177,7 +177,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv secondImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
@@ -200,7 +200,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv thirdImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
@@ -223,7 +223,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
@@ -253,13 +253,13 @@ const MidSection = () =>
                             <h2>Shortcuts</h2>
                         </PlaylistsTitle>
                         <PlaylistsArrows>
-                            <ArrowIcon tabIndex={0} color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon tabIndex={0} hover className="fas fa-chevron-right"></ArrowIcon>
+                            <ArrowIcon  color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon  hover className="fas fa-chevron-right"></ArrowIcon>
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
                         <ImageAndTextDiv>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://smartcdn.prod.postmedia.digital/windsorstar/wp-content/uploads/2018/08/trippie-redd-cover.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
@@ -282,7 +282,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv secondImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                     <IconsDiv>
@@ -304,7 +304,7 @@ const MidSection = () =>
                                 <PlaylistFollowers>1 FOLLOWER</PlaylistFollowers>
                             </TextDiv>
                         </ImageAndTextDiv>
-                        <ImageAndTextDiv tabIndex={0} thirdImage>
+                        <ImageAndTextDiv  thirdImage>
                             <ImageDiv style={{clipPath:"circle(50%)"}}>
                                 <Image src="https://pyxis.nymag.com/v1/imgs/3a1/590/8f5ebf7b0b37bed6b276e98597f3fc5bd2-bad-bunny-covid.rsquare.w1200.jpg"></Image>
                                     <SettingsDiv>
@@ -328,7 +328,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
@@ -358,13 +358,13 @@ const MidSection = () =>
                             <h2>Shortcuts</h2>
                         </PlaylistsTitle>
                         <PlaylistsArrows>
-                            <ArrowIcon tabIndex={0} color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
-                            <ArrowIcon tabIndex={0} hover className="fas fa-chevron-right"></ArrowIcon>
+                            <ArrowIcon  color="#5c5b5b" className="fas fa-chevron-left"></ArrowIcon>
+                            <ArrowIcon  hover className="fas fa-chevron-right"></ArrowIcon>
                         </PlaylistsArrows>
                     </TopPart>
                     <BottomPart>
                         <ImageAndTextDiv>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
@@ -387,7 +387,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv secondImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
@@ -410,7 +410,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv thirdImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://i.pinimg.com/736x/bf/0b/66/bf0b663faf1994e149414e34b6a2a5ef.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
@@ -433,7 +433,7 @@ const MidSection = () =>
                             </TextDiv>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
-                            <ImageDiv tabIndex={0}>
+                            <ImageDiv >
                                 <Image src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>

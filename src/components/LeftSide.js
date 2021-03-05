@@ -22,7 +22,7 @@ const LeftSide = () => {
     return (
         <LeftSideDiv>
             <FirstDiv>
-                <MoreOptions tabIndex={0}></MoreOptions>
+                <MoreOptions href="#"></MoreOptions>
             </FirstDiv>
             <SecondDiv>
                 <IconAndParagraph icon="fas fa-home" words="Home"/>
@@ -32,44 +32,44 @@ const LeftSide = () => {
             <PlaylistsDiv>
                 <PlaylistDiv>
                     <PlaylistHeader>YOUR PLAYLISTS</PlaylistHeader>
-                    <PlaylistSongs tabIndex={0}>Albums</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Liked Songs fssssssssssssssssssssssss</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>RaPlaylistSongs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>EDM</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>The best of 2018</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Country Music</PlaylistSongs>
+                    <PlaylistSongs href="#">Albums</PlaylistSongs>
+                    <PlaylistSongs href="#">Liked Songs fssssssssssssssssssssssss</PlaylistSongs>
+                    <PlaylistSongs href="#">RaPlaylistSongs</PlaylistSongs>
+                    <PlaylistSongs href="#">EDM</PlaylistSongs>
+                    <PlaylistSongs href="#">The best of 2018</PlaylistSongs>
+                    <PlaylistSongs href="#">Country Music</PlaylistSongs>
                 </PlaylistDiv>
                 <PlaylistDiv>
                     <PlaylistHeader>YOUR PLAYLISTS</PlaylistHeader>
-                    <PlaylistSongs tabIndex={0}>Albums</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Liked Songs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>RaPlaylistSongs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>EDM</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>The best of 2018</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Country Music</PlaylistSongs>
+                    <PlaylistSongs href="#">Albums</PlaylistSongs>
+                    <PlaylistSongs href="#">Liked Songs</PlaylistSongs>
+                    <PlaylistSongs href="#">RaPlaylistSongs</PlaylistSongs>
+                    <PlaylistSongs href="#">EDM</PlaylistSongs>
+                    <PlaylistSongs href="#">The best of 2018</PlaylistSongs>
+                    <PlaylistSongs href="#">Country Music</PlaylistSongs>
                 </PlaylistDiv>
                 <PlaylistDiv>
                     <PlaylistHeader>YOUR PLAYLISTS</PlaylistHeader>
-                    <PlaylistSongs tabIndex={0}>Albums</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Liked Songs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>RaPlaylistSongs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>EDM</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>The best of 2018</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Country Music</PlaylistSongs>
+                    <PlaylistSongs href="#">Albums</PlaylistSongs>
+                    <PlaylistSongs href="#">Liked Songs</PlaylistSongs>
+                    <PlaylistSongs href="#">RaPlaylistSongs</PlaylistSongs>
+                    <PlaylistSongs href="#">EDM</PlaylistSongs>
+                    <PlaylistSongs href="#">The best of 2018</PlaylistSongs>
+                    <PlaylistSongs href="#">Country Music</PlaylistSongs>
                 </PlaylistDiv>
                 <PlaylistDiv>
                     <PlaylistHeader>YOUR PLAYLISTS</PlaylistHeader>
-                    <PlaylistSongs tabIndex={0}>Albums</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Liked Songs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>RaPlaylistSongs</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>EDM</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>The best of 2018</PlaylistSongs>
-                    <PlaylistSongs tabIndex={0}>Country Music</PlaylistSongs>
+                    <PlaylistSongs href="#">Albums</PlaylistSongs>
+                    <PlaylistSongs href="#">Liked Songs</PlaylistSongs>
+                    <PlaylistSongs href="#">RaPlaylistSongs</PlaylistSongs>
+                    <PlaylistSongs href="#">EDM</PlaylistSongs>
+                    <PlaylistSongs href="#">The best of 2018</PlaylistSongs>
+                    <PlaylistSongs href="#">Country Music</PlaylistSongs>
                 </PlaylistDiv>
             </PlaylistsDiv>
             <NewPlaylistDiv>
                 <AddPlaylistDiv>
-                        <NewPlaylistIcon tabIndex={0} className="fas fa-plus-circle"></NewPlaylistIcon>
+                        <NewPlaylistIcon href="#" className="fas fa-plus-circle"></NewPlaylistIcon>
                         <NewPlaylistParagraph>New Playlist</NewPlaylistParagraph>
                 </AddPlaylistDiv>
             </NewPlaylistDiv>
