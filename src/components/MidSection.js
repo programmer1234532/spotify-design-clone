@@ -155,7 +155,7 @@ const MidSection = () =>
                     <BottomPart>
                         <ImageAndTextDiv>
                             <ImageDiv >
-                                <Image src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
+                                <Image src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat2_LARGE-en.jpg"></Image>
                                 <SettingsDiv>
                                     <IconsDiv>
                                         <IconDiv >
@@ -434,7 +434,7 @@ const MidSection = () =>
                         </ImageAndTextDiv>
                         <ImageAndTextDiv lastImage>
                             <ImageDiv >
-                                <Image src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind_LARGE-en.jpg"></Image>
+                                <Image src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat2_LARGE-en.jpg"></Image>
                                     <SettingsDiv>
                                         <IconsDiv>
                                             <IconDiv >
